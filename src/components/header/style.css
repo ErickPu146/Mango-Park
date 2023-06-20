@@ -1,6 +1,8 @@
 .navAndFooter {
+    background-color: #784BA0;
+background-image: linear-gradient(90deg, #784BA0 0%, #613b80 76%, #0a0048 100%);
 
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% ); */
 }
 
 .class_li{
