@@ -16,12 +16,12 @@ const Footer = () => {
                     </section>
                     <section className="col-md-12 col-lg-4 mt-2">
                         <div className="d-flex flex-column text-white align-items-center container">
-                            <h3>Siguenos en</h3>
+                            <h3>Síguenos en</h3>
                             <div className="d-flex gap-4">
-                                <a className="i" href="#"><Facebook/></a>
-                                <a className="i" href="#"><Instagram/></a>
-                                <a className="i" href="#"><Twitter/></a>
-                                <a className="i" href="#"><Github/></a>
+                                <a className="i" href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer"><Facebook/></a>
+                                <a className="i" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><Instagram/></a>
+                                <a className="i" href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer"><Twitter/></a>
+                                <a className="i" href="https://github.com/ErickPu146/Mango-Park" target="_blank" rel="noopener noreferrer"><Github/></a>
                             </div>
                         </div>
                     </section>
