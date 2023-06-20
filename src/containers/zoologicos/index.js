@@ -1,5 +1,5 @@
 import { Header } from "../../components/header";
-// import { Footer } from "../../components/footer";
+import { Footer } from "../../components/footer";
 
 
 const Zoologicos = () => {
@@ -7,7 +7,7 @@ const Zoologicos = () => {
         <>
             <Header/>
 
-            {/* <Footer/> */}
+            <Footer/>
         </>
     );
 }
