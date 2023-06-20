@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Twitter, Github } from "react-bootstrap-icons";
-import "./footer.css"
+import "./style.css"
 
 const Footer = () => {
     return (

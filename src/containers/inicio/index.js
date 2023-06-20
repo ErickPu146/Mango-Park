@@ -1,6 +1,6 @@
 import "./style.css";
 import { Header } from "../../components/header";
-// import { Footer } from "../../components/footer/";
+import { Footer } from "../../components/footer/";
 import fondoAnimal1 from "./images/fondoAnimal1.png";
 import fondoAnimal2 from "./images/fondoAnimal2.png";
 import imagen1 from "./images/imagen1.jpg";
@@ -106,7 +106,7 @@ const Inicio = () => {
                 </div>
             </main>
 
-            {/* <Footer/>  */}
+            <Footer/> 
         </>
     );
 }

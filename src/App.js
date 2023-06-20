@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import { Footer } from './componentes/footer/footer';
-import React from 'react';
-=======
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Inicio } from './containers/inicio';
@@ -10,15 +6,11 @@ import { Zoologicos } from './containers/zoologicos';
 import { Animales } from './containers/animales';
 import { Tienda } from './containers/tienda';
 import { Contactos } from './containers/contactos';
->>>>>>> f7c945e632c0c2bb0af067138e19c6785627557f
 
 function App() {
 
   return (
     <>
-<<<<<<< HEAD
-      <Footer />
-=======
       <Router>
         <Routes>
           <Route path="/" element={<Inicio />} />
@@ -29,7 +21,6 @@ function App() {
           <Route path="/contactos" element={<Contactos />} />
         </Routes>
       </Router>
->>>>>>> f7c945e632c0c2bb0af067138e19c6785627557f
     </>
   );
 }
