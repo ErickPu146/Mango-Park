@@ -1,6 +1,6 @@
 import "./style.css";
+import { Header } from "../../components/header";
 // import { Footer } from "../../components/footer/";
-// import { Header } from "../../components/header";
 import fondoAnimal1 from "./images/fondoAnimal1.png";
 import fondoAnimal2 from "./images/fondoAnimal2.png";
 import imagen1 from "./images/imagen1.jpg";
@@ -12,8 +12,7 @@ import imagen5 from "./images/imagen5.jpg";
 const Inicio = () => {
     return (
         <>
-            {/* <Header /> */}
-
+            <Header />
             <main className="">
                 <div className="bg-1 py-5 relative">
                     <img src={fondoAnimal2} alt="Animal" className="d-none d-lg-block fondoAnimal2"/>
