@@ -55,11 +55,16 @@
 }
 
 .card-zoo3 {
-    background-color: #253342;
+    background-color: #4f76a0;
 }
 
 .card-zoo4 {
     background-color: #f89fa1;
+}
+
+.card-zoo5 {
+    background-color: #F7CE68;
+    background-image: linear-gradient(135deg, #F7CE68 0%, #FBAB7E 52%);
 }
 
 .galeria .imgContainer {
