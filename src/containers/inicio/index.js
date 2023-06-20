@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import "./style.css";
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer/";
@@ -8,13 +9,20 @@ import imagen2 from "./images/imagen2.jpg";
 import imagen3 from "./images/imagen3.jpg";
 import imagen4 from "./images/imagen4.jpg";
 import imagen5 from "./images/imagen5.jpg";
+import { SelectorTheme } from "../../components/selectorTheme";
 
 const Inicio = () => {
+  const [backGround, setBackground] = useState(false);
+
     return (
         <>
             <Header />
-            <main className="">
-                <div className="bg-1 py-5 relative">
+            <main className="position-relative">
+                <SelectorTheme 
+                    setBackground={setBackground}
+                    backGround={backGround}    
+                />
+                <div className={`${backGround ? 'bg-dark' : 'bg-light'} py-5 relative`}>
                     <img src={fondoAnimal2} alt="Animal" className="d-none d-lg-block fondoAnimal2"/>
                     <div className="container text-center relative">
                         <div className="row py-5">
@@ -46,7 +54,7 @@ const Inicio = () => {
                                 </div>
                             </div>
                             <div className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-7 col-xl-6">
-                                <div className="opacity text-light card-zoo3 rounded-5 card-body d-flex flex-column justify-content-center align-items-center">
+                                <div className={`${backGround ? 'card-zoo3' : 'bg-success'} opacity text-light rounded-5 card-body d-flex flex-column justify-content-center align-items-center`}>
                                     <h1 className="w-100 border-bottom">
                                         Proyectos
                                     </h1>
@@ -74,8 +82,8 @@ const Inicio = () => {
                     </div>
                 </div>
 
-                <div className="bg-2 py-5">
-                    <div className="container my-5 text-center text-bg-dark rounded-5">
+                <div className={`${backGround ? 'bg-dark' : 'bg-light'} py-5`}>
+                    <div className={`${backGround ? 'card-zoo5' : 'text-bg-dark'} opacity container my-5 text-center rounded-5`}>
                         <div className="row align-items-center mt-5 galeria">
                             <div className="col-12 col-md-6 p-3">
                                 <h1>Proteccion y bienestar</h1>
