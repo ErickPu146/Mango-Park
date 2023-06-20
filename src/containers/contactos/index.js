@@ -1,5 +1,4 @@
 import { Header } from "../../components/header";
-// import { Footer } from "../../components/footer/";
 import './style.css';
 import Email from './imagenes-contactos/email.jpg';
 import Telefono from './imagenes-contactos/contactos_llamar.png';
@@ -39,10 +38,10 @@ const Contactos = () => {
                                     </p>
                             </div>
                             <div className="mb-3">
-                                <a href="#" className="m-3"><i className="bi bi-facebook i"></i></a>
-                                <a href="#" className="m-3"><i className="bi bi-instagram i"></i></a>
-                                <a href="#" className="m-3"><i className="bi bi-twitter i"></i></a>
-                                <a href="#" className="m-3"><i className="bi bi-github i"></i></a>
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="m-3"><i className="bi bi-facebook i"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="m-3"><i className="bi bi-instagram i"></i></a>
+                                <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer" className="m-3"><i className="bi bi-twitter i"></i></a>
+                                <a href="https://github.com/ErickPu146/Mango-Park/tree/main" target="_blank" rel="noopener noreferrer" className="m-3"><i className="bi bi-github i"></i></a>
                             </div>
                         </div>
                         <div className="div_container_contactanos w-75 bg-dark p-4 rounded">
