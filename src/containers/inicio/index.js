@@ -31,12 +31,10 @@ const Inicio = () => {
                                     <h1 className="w-100 border-bottom">
                                         Nosotros
                                     </h1>
-                                    <p className="card-text fs-5">Desde el año 2005, nuestra empresa ha creado y desarrollado diversos
-                                        zoológicos
-                                        alrededor del mundo. Nos enorgullece contar con una amplia experiencia en el diseño y
-                                        construcción de espacios naturales que brindan un hogar seguro y enriquecedor para una
-                                        amplia
-                                        variedad de especies.</p>
+                                    <p className="card-text fs-5">Desde el año 2005, nuestra empresa se enorgullece de contar con una amplia 
+                                        experiencia en el diseño y construcción de espacios naturales que brindan un hogar seguro y 
+                                        enriquecedor para una amplia variedad de especies.
+                                    </p>
                                 </div>
                             </div>
                             <div className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-7 col-xl-6 mb-md-3">
@@ -54,14 +52,17 @@ const Inicio = () => {
                                 </div>
                             </div>
                             <div className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-7 col-xl-6">
-                                <div className={`${backGround ? 'card-zoo3' : 'bg-success'} opacity text-light rounded-5 card-body d-flex flex-column justify-content-center align-items-center`}>
+                                <div className={`${backGround ? 'card-zoo3' : 'bg-success'} 
+                                    opacity text-light rounded-5 card-body d-flex flex-column justify-content-center align-items-center`}
+                                >
                                     <h1 className="w-100 border-bottom">
                                         Proyectos
                                     </h1>
-                                    <p className="card-text fs-5">Cada proyecto de zoológico que emprendemos es único y se adapta a las
+                                    <p className="card-text fs-5">Cada proyecto del zoológico que emprendemos es único y se adapta a las
                                         necesidades y características de la ubicación y las especies que albergará. Contamos con un
-                                        equipo de expertos en diseño web, junto con biólogos y conservacionistas, para crear un
-                                        ambiente atractivo y cautivador tanto para los visitantes como para los animales.</p>
+                                        equipo experto de biólogos y conservacionistas, para crear un ambiente atractivo y cautivador 
+                                        tanto para los visitantes como para los animales.
+                                    </p>
                                 </div>
                             </div>
                             <div className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-5 col-xl-4">
@@ -70,8 +71,7 @@ const Inicio = () => {
                                         Descubre
                                     </h1>
                                     <p className="card-text fs-5">Te invitamos a explorar nuestro sitio web y descubrir la maravillosa
-                                        diversidad
-                                        de nuestros zoológicos, así como las iniciativas de conservación en las que estamos
+                                        diversidad de nuestro zoológico, así como las iniciativas de conservación en las que estamos
                                         comprometidos. Únete a nosotros en esta apasionante aventura en la protección y preservación
                                         de la vida silvestre desde el año 2005.
                                     </p>
