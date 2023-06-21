@@ -4,12 +4,12 @@ import Email from './imagenes-contactos/email.jpg';
 import Telefono from './imagenes-contactos/contactos_llamar.png';
 import { Footer } from "../../components/footer/";
 
-const Contactos = () => {
+const Contactos = ({ background }) => {
     return (
         <>
             <Header />
 
-            <main>
+            <main className={`${background ? 'bg-dark' : 'bg-light'}`}>
                 <div className="text-center">
                     <div className=" main_contactanos mb-3 p-5 shadow">
                         <div className="d-flex flex-column align-items-center " style={{width: "100%"}}>

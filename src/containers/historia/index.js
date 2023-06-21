@@ -3,7 +3,7 @@ import { Footer } from "../../components/footer/";
 
 
 
-const Historia = () => {
+const Historia = ({ background }) => {
     return (
         <>
             <Header />
