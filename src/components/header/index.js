@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Navbar, Container, Form } from 'react-bootstrap';
 import './style.css';
 import logoZoo from './imagen-logo/logo-zoo.png';
+import { SelectorTheme } from '../selectorTheme';
+import { ParkContext } from '../../context';
 
 const Header = () => {
+  const {
+    background,
+    setBackground,
+  } = useContext(ParkContext);
 
   const location = useLocation()
 
@@ -78,6 +84,12 @@ const Header = () => {
                   >
                     <i className="bi bi-telephone-fill"> Contactanos</i>
                   </Link>
+                </li>
+                <li className="nav-item class_li" >
+                  <SelectorTheme 
+                      background={background}
+                      setBackground={setBackground}
+                  />
                 </li>
               </ul>
 

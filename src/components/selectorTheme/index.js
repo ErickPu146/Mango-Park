@@ -1,19 +1,16 @@
 import "./style.css";
 
-const SelectorTheme = ( { setBackground, backGround } ) => {
+const SelectorTheme = ( { setBackground, background } ) => {
   
   return (
     <>
       <div
-        className="btn btn-light themes fs-5 d-flex 
-            justify-content-center align-items-center gap-1
-            p-2 border border-4 rounded-5 
-        "
-        onClick={() => setBackground(!backGround)}
+        className=" tot fs-6 d-flex 
+            justify-content-center align-items-center gap-1"
+        onClick={() => setBackground(!background)}
       >
-        <span>{backGround ? 'Claro' : 'Oscuro'}</span>
-        <i className={`${backGround ? 'd-block' : 'd-none'} bi bi-brightness-high-fill`} ></i>
-        <i className={`${backGround ? 'd-none' : 'd-block'} bi bi-moon-fill`}></i>
+        <i className={`${background ? 'd-block' : 'd-none'} themes bi bi-brightness-high-fill`} ></i>
+        <i className={`${background ? 'd-none' : 'd-block'} themes bi bi-moon-fill`}></i>
       </div>
     </>
   );

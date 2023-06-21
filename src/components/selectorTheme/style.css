@@ -1,11 +1,10 @@
 .themes {
-    position: absolute;
-    z-index: 1;
-    top: 1%;
-    right: 1%;
+    color: antiquewhite;
 }
 
 .themes:hover {
-    background-color: rgb(238, 238, 238);
-    cursor: pointer;
+    color: rgba(238, 238, 238, 0.404);
+}
+.tot {
+    margin-top: 7.5px;
 }
