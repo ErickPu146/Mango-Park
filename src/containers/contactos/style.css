@@ -1,14 +1,12 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-/* ajuste al body */
-
-
 /* ajuste de main de contactanos */
 .main_contactanos {
-    background-image: url(./imagenes-contactos/fondo-contactos.jpg);
-    background-size: cover;
+    background-image: url(./imagenes-contactos/animal-hero-east-africa-crowned-crane.jpg);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 250px;
+
+    height: 400px;
 }
 .h_de_contactanos {
     padding: 15px;
@@ -18,38 +16,22 @@
 }
 .div_container_contactanos{
     margin: 2em;
-
 }
-.input_style_contactos {
-    border-radius: 15px;
-    text-align: center;
-    border: none;
-    border-bottom: 3px solid lightslategray;
+.text-color {
+    color: black
+}
+.text-white-color {
     color: white;
-    background-color: transparent;
 }
-.input_style_contactos:focus {
-    outline: none;
-    background: linear-gradient(to bottom, transparent, #555);
-}
-.textarea_style_contactos {
+.textarea-style {
+    height: 200px;
     resize: none;
-    border-radius: 15px;
-    text-align: center;
-    border: none;
-    border-bottom: 3px solid lightslategray;
-    color: white;
-    background-color: transparent;
-    height: 5em;
-}
-.textarea_style_contactos:focus {
-    outline: none;
-    background: linear-gradient(to bottom, transparent, #555);
-    border-bottom: 3px solid lightslategray;
-}
 
-
+}
 .ajuste-boton-enviar {
     width: 7em;
+}
+.size {
+    font-size: 5em;
 }
 /* Fin del ajuste del css contactos */

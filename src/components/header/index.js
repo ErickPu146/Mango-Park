@@ -47,18 +47,10 @@ const Header = () => {
                 </li>
                 <li className="nav-item class_li" >
                   <Link
-                    to="/historia"
-                    className="nav-link text-white"
-                  >
-                    <i className="bi bi-book-fill"> Historia</i>
-                  </Link>
-                </li>
-                <li className="nav-item class_li" >
-                  <Link
                     to="/zoologicos"
                     className="nav-link text-white"
                   >
-                    <i className="bi bi-info-circle-fill"> Zoologicos</i>
+                    <i className="bi bi-geo-alt-fill"> Ubicacion</i>
                   </Link>
                 </li>
                 <li className="nav-item class_li" >
@@ -66,7 +58,7 @@ const Header = () => {
                     to="/animales"
                     className="nav-link text-white"
                   >
-                    <i className="bi bi-binoculars-fill"> Animales</i>
+                    <i className="bi bi-info-circle-fill"> Zoologico</i>
                   </Link>
                 </li>
                 <li className="nav-item class_li" >
