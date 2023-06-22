@@ -1,6 +1,6 @@
 
 import { ParkProvider } from '../context';
-import { AppUI } from './AppUI';
+import { AppUI } from '../pages/AppUI';
 
 function App() {
 

@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Inicio } from '../containers/inicio';
-import { Historia } from '../containers/historia';
-import { Zoologicos } from '../containers/zoologicos';
-import { Animales } from '../containers/animales';
-import { Tienda } from '../containers/tienda';
-import { Contactos } from '../containers/contactos';
+import { Inicio } from '../routes/inicio';
+import { Historia } from '../routes/historia';
+import { Zoologicos } from '../routes/zoologicos';
+import { Animales } from '../routes/animales';
+import { Tienda } from '../routes/tienda';
+import { Contactos } from '../routes/contactos';
 import { ParkContext } from '../context';
 
 const AppUI = () => {

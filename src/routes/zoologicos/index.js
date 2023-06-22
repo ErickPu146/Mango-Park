@@ -1,5 +1,5 @@
-import { Header } from "../../components/header";
-import { Footer } from "../../components/footer";
+import { Header } from "../../containers/header";
+import { Footer } from "../../containers/footer";
 
 
 const Zoologicos = ({ background }) => {

@@ -3,8 +3,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { Navbar, Container, Form } from 'react-bootstrap';
 import './style.css';
 import logoZoo from './imagen-logo/logo-zoo.png';
-import { SelectorTheme } from '../selectorTheme';
 import { ParkContext } from '../../context';
+import { SelectorTheme } from '../../components/selectorTheme';
+
 
 const Header = () => {
   const {

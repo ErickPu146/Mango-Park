@@ -1,6 +1,6 @@
 import "./style.css";
-import { Header } from "../../components/header";
-import { Footer } from "../../components/footer/";
+import { Header } from "../../containers/header";
+import { Footer } from "../../containers/footer/";
 import fondoAnimal1 from "./images/fondoAnimal1.png";
 import fondoAnimal2 from "./images/fondoAnimal2.png";
 import imagen1 from "./images/imagen1.jpg";
