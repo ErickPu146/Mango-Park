@@ -5,12 +5,15 @@ import Telefono from './imagenes-contactos/contactos_llamar.png';
 import { Footer } from "../../components/footer/";
 import { Form } from 'react-bootstrap'
 
+const Contactos = ({ background }) => {
+
 const Contactos = () => {
     const backGround = false;
+
     return (
         <>
             <Header />
-
+      
             <main className={`${backGround ? 'bg-dark' : 'bg-light'}`}>
                 <div className="text-center">
                     <div className=" main_contactanos mb-3 p-5 shadow">
