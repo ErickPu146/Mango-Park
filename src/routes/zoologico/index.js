@@ -2,7 +2,7 @@ import { Header } from "../../containers/header";
 import { Footer } from "../../containers/footer";
 
 
-const Zoologicos = ({ background }) => {
+const Zoologico = ({ background }) => {
     return (
         <>
             <Header/>
@@ -12,4 +12,4 @@ const Zoologicos = ({ background }) => {
     );
 }
 
-export { Zoologicos };
+export { Zoologico };

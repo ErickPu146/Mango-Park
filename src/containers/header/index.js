@@ -5,6 +5,7 @@ import './style.css';
 import logoZoo from './imagen-logo/logo-zoo.png';
 import { ParkContext } from '../../context';
 import { SelectorTheme } from '../../components/selectorTheme';
+import { InputSearch } from '../../components/inputSearch';
 
 
 const Header = () => {
@@ -48,7 +49,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item class_li" >
                   <Link
-                    to="/zoologicos"
+                    to="/ubicacion"
                     className="nav-link text-white"
                   >
                     <i className="bi bi-geo-alt-fill"> Ubicacion</i>
@@ -56,7 +57,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item class_li" >
                   <Link
-                    to="/animales"
+                    to="/zoologico"
                     className="nav-link text-white"
                   >
                     <i className="bi bi-info-circle-fill"> Zoologico</i>
@@ -75,7 +76,7 @@ const Header = () => {
                     to="/contactos"
                     className="nav-link text-white"
                   >
-                    <i className="bi bi-telephone-fill"> Contactanos</i>
+                    <i className="bi bi-telephone-fill"> Contáctanos</i>
                   </Link>
                 </li>
                 <li className="nav-item class_li" >
@@ -86,21 +87,19 @@ const Header = () => {
                 </li>
               </ul>
 
-              <Form 
-                className={`
+              <div className={`
                 ${
-                  location.pathname === "/" | 
-                  location.pathname === "/historia" |
-                  location.pathname === "/contactos" 
-                  ? "d-none" : "d-block"
-                }`}>
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-              </Form>
+                  (location.pathname === "/") |
+                  (location.pathname === "/ubicacion") |
+                  (location.pathname === "/contactos")
+                  ? "d-none"
+                  : "d-block"
+                }`}
+              >
+                <InputSearch/>
+              </div>
+
+
             </Navbar.Collapse>
           </Container>
         </Navbar>
