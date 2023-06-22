@@ -1,6 +1,6 @@
-import { Header } from "../../components/header";
+import { Header } from "../../containers/header";
 import './style.css';
-import { Footer } from "../../components/footer/";
+import { Footer } from "../../containers/footer/";
 import { Form } from 'react-bootstrap'
 import { useState } from "react";
 
@@ -22,7 +22,7 @@ const Contactos = ({ background }) => {
         <>
             <Header />
       
-            <main className={`${background ? 'bg-dark' : 'bg-light'}`}>
+            <main className={`${background ? 'bg-dark' : 'bg-light'} container-fluid`}>
                 <div className="text-center">
                     <div className=" main_contactanos mb-3 p-5 shadow">
                         <div className="d-flex flex-column align-items-center " style={{ width: "100%" }}>
@@ -32,7 +32,7 @@ const Contactos = ({ background }) => {
                     </div>
                     <div className="d-flex justify-content-sm-around align-items-center text-dark flex-column flex-sm-row ">
 
-                        <div className="div_container_contactanos w-75 p-4 rounded">
+                        <div className="div_container_contactanos w-75 p-4 rounded ">
                             <Form noValidate validated={validated} className={`${background ? 'text-white' : 'text-dark'}`} onClick={(event) => submit(event)}>
                                 <p className="text-start">Nombre:</p>
                                 <Form.Control type="text" className={`mb-4 w-100 bg-secondary bg-opacity-25 ${background ? 'text-white' : 'text-dark'}`} required placeholder="Ingrese su Nombre" />

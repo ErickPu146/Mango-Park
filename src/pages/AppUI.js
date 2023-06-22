@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Inicio } from '../containers/inicio';
-import { Historia } from '../containers/historia';
-import { Zoologicos } from '../containers/zoologicos';
-import { Animales } from '../containers/animales';
-import { Tienda } from '../containers/tienda';
-import { Contactos } from '../containers/contactos';
+import { Inicio } from '../routes/inicio';
+import { Ubicacion } from '../routes/ubicacion';
+import { Zoologico } from '../routes/zoologico';
+import { Tienda } from '../routes/tienda';
+import { Contactos } from '../routes/contactos';
 import { ParkContext } from '../context';
+
 
 const AppUI = () => {
     const {
@@ -22,16 +22,12 @@ const AppUI = () => {
                         element={<Inicio background={background}/>} 
                     />
                     <Route 
-                        path="/historia" 
-                        element={<Historia background={background}/>} 
+                        path="/ubicacion" 
+                        element={<Ubicacion background={background}/>} 
                     />
                     <Route 
-                        path="/zoologicos" 
-                        element={<Zoologicos background={background}/>} 
-                    />
-                    <Route 
-                        path="/animales" 
-                        element={<Animales background={background}/>}
+                        path="/zoologico" 
+                        element={<Zoologico background={background}/>} 
                     />
                     <Route 
                         path="/tienda" 
