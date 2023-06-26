@@ -9,10 +9,6 @@ import { InputSearch } from '../../components/inputSearch';
 
 
 const Header = () => {
-  const {
-    background,
-    setBackground,
-  } = useContext(ParkContext);
 
   const location = useLocation()
 
@@ -80,10 +76,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item class_li" >
-                  <SelectorTheme 
-                      background={background}
-                      setBackground={setBackground}
-                  />
+                  <SelectorTheme />
                 </li>
               </ul>
 
