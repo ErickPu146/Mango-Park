@@ -1,9 +1,8 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Navbar, Container, Form } from 'react-bootstrap';
+import { Navbar, Container } from 'react-bootstrap';
 import './style.css';
 import logoZoo from './imagen-logo/logo-zoo.png';
-import { ParkContext } from '../../context';
 import { SelectorTheme } from '../../components/selectorTheme';
 import { InputSearch } from '../../components/inputSearch';
 

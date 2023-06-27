@@ -1,0 +1,51 @@
+.title {
+    font-family: 'Sigmar';
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .headerZoo {
+        color: white;
+        height: 30rem;
+        background-image: url(./images/Imagen1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .title {
+        font-size: 3.5rem;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1800px) {
+    .headerZoo {
+        color: white;
+        height: 50rem;
+        background-image: url(./images/Imagen1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+        
+    .title {
+        font-size: 5rem;
+    }
+    
+}
+
+@media (min-width: 1801px) {
+    .headerZoo {
+        color: white;
+        height: 65rem;
+        background-image: url(./images/Imagen1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+        
+    .title {
+        font-size: 5.5rem;
+    }
+    
+}

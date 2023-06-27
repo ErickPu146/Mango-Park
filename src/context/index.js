@@ -6,6 +6,7 @@ const allowedValues = ["123", "456", "789"];
 const ParkProvider = (props) => {
   const [background, setBackground] = useState(false);
   const [workerCode, setWorkerCode] = useState("");
+  const [validatedWorkerCode, setValidatedWorkerCode] = useState(false)
   const [validated, setValidated] = useState(false);
   const [show, setShow] = useState(false);
 
@@ -16,6 +17,7 @@ const ParkProvider = (props) => {
     console.log(workerCode);
     if (allowedValues.includes(workerCode)) {
       alert('Ingreso Correctamente')
+      setValidatedWorkerCode(true)
       handleClose()
     } else {
       alert('Datos incorrecto')
@@ -46,6 +48,7 @@ const ParkProvider = (props) => {
           show,
           workerCode,
           setWorkerCode,
+          validatedWorkerCode,
         }}
       >
         {props.children}
