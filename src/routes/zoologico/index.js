@@ -1,99 +1,93 @@
-import { useContext } from "react";
 import { Header } from "../../containers/header";
 import { Footer } from "../../containers/footer";
-import { Button, Modal, Form } from "react-bootstrap";
-import { ParkContext } from "../../context";
-import "./style.css"
+import { Image, Container, Row } from "react-bootstrap";
+import "./style.css";
+import Animal1 from "./images/Imagen1.jpg";
+import { Area } from "../../components/area";
+import { Animal } from "../../components/animal";
+
+const defaultAreas = [
+  {
+    nameArea: "Todas las areas",
+    img: Animal1,
+  },
+  {
+    nameArea: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameArea: "segunda",
+    img: Animal1,
+  },
+  {
+    nameArea: "Tercera",
+    img: Animal1,
+  },
+];
+
+const defaultAnimals = [
+  {
+    nameAnimal: "Pepito",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "patito",
+    area: "segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
+  },
+];
 
 const Zoologico = ({ background }) => {
-  const {
-    show,
-    handleShow,
-    handleClose,
-    validated,
-    handleSubmit,
-    workerCode,
-    setWorkerCode,
-    validatedWorkerCode,
-  } = useContext(ParkContext);
-
   return (
     <>
       <Header />
-      <main className={`${background ? "text-bg-dark" : "text-bg-light"} position-relative`}>
-        <div className="pb-4 headerZoo">
-          <div className="h-100 text-center d-flex flex-column justify-content-end pb-5">
-            <p className="d-md-none title mt-5 pt-5">LAS MARAVILLAS DE MANGOPARK</p>
-            <p className="d-none d-md-block title">LAS MARAVILLAS DE</p>
-            <p className="d-none d-md-block title">MANGOPARK</p>
+      <main
+        className={`${
+          background ? "text-bg-dark" : "text-bg-light"
+        } position-relative`}
+      >
+        <div className="headerZoo position-relative d-flex justify-content-center">
+          <Image src={Animal1} fluid className="w-100 h-100 imgResponsive" />
+          <div className="position-absolute bottom-0">
+            <div className="text-center title">
+              <span>LAS MARAVILLAS DE </span>
+              <span>MANGOPARK</span>
+            </div>
           </div>
-          <Button
-            variant="info"
-            onClick={handleShow} 
-            className="position-absolute top-0 end-0 m-2"
-          >
-            ¿Eres parte del equipo de administracion de MangoPark?
-          </Button>
-
-          <Modal
-            show={show}
-            onHide={handleClose}
-            backdrop="static"
-            keyboard={false}
-            data-bs-theme={`${background ? "dark" : "light"}`}
-          >
-            <Modal.Header
-              closeButton
-              className={`${background ? "text-bg-dark" : "text-bg-light"}`}
-            >
-              <Modal.Title>Apartado para el personal de MangoPark</Modal.Title>
-            </Modal.Header>
-            <Modal.Body
-              className={`${background ? "text-bg-dark" : "text-bg-light"}`}
-            >
-              <Form
-                noValidate
-                validated={validated}
-                onSubmit={(event) => handleSubmit(event, workerCode)}
-              >
-                <Form.Group
-                  className="mb-3"
-                >
-                  <Form.Label>Ingrese su nombre</Form.Label>
-                  <Form.Control type="text" required />
-                  <Form.Label>Correo Electronico</Form.Label>
-                  <Form.Control
-                    type="email"
-                    placeholder="nombre@ejemplo.com"
-                    required
-                  />
-                  <Form.Label>
-                    Codigo de permiso otorgado por MangoPark
-                  </Form.Label>
-                  <Form.Control
-                    onChange={(event) => setWorkerCode(event.target.value)}
-                    type="password"
-                    required
-                  />
-                </Form.Group>
-                <Modal.Footer
-                  className={`${background ? "text-bg-dark" : "text-bg-light"}`}
-                >
-                  <Button variant="secondary" onClick={handleClose}>
-                    Cerrar
-                  </Button>
-                  <Button type="submit" variant="primary">
-                    Ingresar
-                  </Button>
-                </Modal.Footer>
-              </Form>
-            </Modal.Body>
-          </Modal>
         </div>
 
-        <div className={`${validatedWorkerCode ? 'd-bloc' : 'd-none'}`}>
-          HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        </div>
+        <Container className="pt-5">
+          <div className={`${background ? 'shadowLight' : 'shadowDark'} text-center subTitle mb-5 my-md-5`}>
+            <span>Descubre Nuestras Áreas</span>
+          </div>
+
+          <Row>
+            {defaultAreas.map((area, index) => (
+              <Area area={area} key={index} />
+            ))}
+          </Row>
+
+          <div className={`${background ? 'shadowLight' : 'shadowDark'} text-center subTitle mb-5 my-md-5`}>
+            <span>Habitantes del Área: </span>
+          </div>
+
+          <Row>
+            {defaultAnimals.map((animal, index) => (
+              <Animal animal={animal} key={index} />
+            ))}
+          </Row>
+        </Container>
       </main>
 
       <Footer />

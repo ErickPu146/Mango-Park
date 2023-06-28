@@ -1,51 +1,74 @@
-.title {
-    font-family: 'Sigmar';
-    font-size: 2rem;
+.headerZoo {
+  color: rgb(3, 192, 183);
+  width: 100%;
+  height: 13rem;
 }
+
+.title {
+  font-family: "Sigmar";
+  font-size: 2rem;
+}
+
+.subTitle {
+  font-family: "Sigmar";
+  font-size: 1.5rem;
+}
+
+.imgResponsive {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardArea {
+  height: 10rem;
+}
+
+.shadowDark {
+  box-shadow: 0 0rem 1rem 0.3rem rgb(209, 206, 9);
+}
+
+.shadowLight {
+  box-shadow: 0 0rem 1rem 0.3rem rgb(3, 192, 183);
+}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .headerZoo {
-        color: white;
-        height: 30rem;
-        background-image: url(./images/Imagen1.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    
-    .title {
-        font-size: 3.5rem;
-    }
+  .headerZoo {
+    height: 25rem;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .subTitle {
+    font-size: 2.8rem;
+  }
 }
 
+@media (min-width: 992px) and (max-width: 3000px) {
+  .headerZoo {
+    height: 90vh;
+  }
 
-@media (min-width: 992px) and (max-width: 1800px) {
-    .headerZoo {
-        color: white;
-        height: 50rem;
-        background-image: url(./images/Imagen1.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-        
-    .title {
-        font-size: 5rem;
-    }
-    
+  .title {
+    font-size: 6rem;
+  }
+  .subTitle {
+    font-size: 4.5rem;
+  }
+  .cardArea {
+    height: 13rem;
+  }
 }
 
-@media (min-width: 1801px) {
-    .headerZoo {
-        color: white;
-        height: 65rem;
-        background-image: url(./images/Imagen1.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-        
-    .title {
-        font-size: 5.5rem;
-    }
-    
+@media (min-width: 3001px) {
+  .headerZoo {
+    height: 90rem;
+  }
+  .title {
+    font-size: 7rem;
+  }
+  .subTitle {
+    font-size: 5rem;
+  }
 }
