@@ -1,6 +1,4 @@
 import "./style.css";
-import { Header } from "../../containers/header";
-import { Footer } from "../../containers/footer/";
 import fondoAnimal1 from "./images/fondoAnimal1.png";
 import fondoAnimal2 from "./images/fondoAnimal2.png";
 import imagen1 from "./images/imagen1.jpg";
@@ -8,22 +6,26 @@ import imagen2 from "./images/imagen2.jpg";
 import imagen3 from "./images/imagen3.jpg";
 import imagen4 from "./images/imagen4.jpg";
 import imagen5 from "./images/imagen5.jpg";
+import { useContext } from "react";
+import { ParkContext } from "../../context";
 
-const Inicio = ({ background }) => {
+const Inicio = () => {
+  const { background } = useContext(ParkContext);
   return (
     <>
-      <Header />
-
-      <header className="jumbotron jumbotron-fluid text-center headerHome d-flex align-items-center justify-content-center">
-      <div className="container">
+      <div className="headerHome text-center d-flex align-items-center justify-content-center position-relative">
+        <div className="headerText">
           <div className="mx-auto">
-            <h1 className="title">¡Bienvenido a MangoPark!</h1>
-            <p className="subtitle">Descubre la magia de la vida salvaje en nuestro increíble zoológico.</p>
+            <h1 className="headerTitle my-5">¡Bienvenido a MangoPark!</h1>
+            <p className="headerSubtitle">
+              Descubre la magia de la vida salvaje en nuestro increíble
+              zoológico.
+            </p>
           </div>
+        </div>
       </div>
-    </header>
 
-      <main className="position-relative d-none">
+      <main className="position-relative">
         <div className={`${background ? "bg-dark" : "bg-light"} py-5 relative`}>
           <img
             src={fondoAnimal2}
@@ -34,9 +36,7 @@ const Inicio = ({ background }) => {
             <div className="row py-5">
               <div className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-5 col-xl-4 mb-md-3">
                 <div
-                  className={`${
-                    background ? "shadowCardDark" : "shadowCardLight"
-                  } opacity card-zoo1 rounded-5 card-body d-flex flex-column justify-content-center align-items-center`}
+                  className="opacity card-zoo1 rounded-5 card-body d-flex flex-column justify-content-center align-items-center"
                 >
                   <h1 className="w-100 border-bottom">Nosotros</h1>
                   <p className="card-text fs-5">
@@ -156,8 +156,6 @@ const Inicio = ({ background }) => {
           </div>
         </div>
       </main>
-
-      <Footer />
     </>
   );
 };

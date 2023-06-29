@@ -15,7 +15,7 @@ const Header = () => {
     <>
       <header className="sticky-top">
         <Navbar expand="lg" className="navAndFooter">
-          <Container fluid>
+          <Container>
             <Navbar.Brand>
               <Link
                 to="/"
@@ -32,7 +32,7 @@ const Header = () => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarMangoPark" className="white" />
             <Navbar.Collapse id="navbarMangoPark">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item class_li" >
                   <Link
                     to="/"

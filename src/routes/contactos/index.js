@@ -1,10 +1,13 @@
-import { Header } from "../../containers/header";
 import './style.css';
 import { Footer } from "../../containers/footer/";
 import { Form } from 'react-bootstrap'
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ParkContext } from '../../context';
 
-const Contactos = ({ background }) => {
+const Contactos = () => {
+    const {
+        background,
+    } = useContext(ParkContext);
 
     const [validated, setValidated] = useState(false);
 
@@ -20,8 +23,6 @@ const Contactos = ({ background }) => {
 
     return (
         <>
-            <Header />
-      
             <main className={`${background ? 'bg-dark' : 'bg-light'} container-fluid`}>
                 <div className="text-center">
                     <div className=" main_contactanos mb-3 p-5 shadow">

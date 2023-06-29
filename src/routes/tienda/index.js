@@ -1,14 +1,15 @@
-import { Header } from "../../containers/header";
+import { useContext } from "react";
 import { Footer } from "../../containers/footer";
+import { ParkContext } from "../../context";
 
 
-const Tienda = ({ background }) => {
+const Tienda = () => {
+    const {
+        background,
+    } = useContext(ParkContext);
     return (
         <>
-            <Header/>
 
-
-            <Footer/>
         </>
     );
 }
