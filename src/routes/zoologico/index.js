@@ -34,7 +34,7 @@ const Zoologico = () => {
           <div
             className={`${
               background ? "shadowSubtitleDark" : "shadowSubtitleLight"
-            } text-center subTitle mb-5 my-md-5`}
+            } text-center subTitle mb-5 my-md-5 w-100`}
           >
             <span>Descubre Nuestras Áreas</span>
           </div>
@@ -48,7 +48,7 @@ const Zoologico = () => {
           <div
             className={`${
               background ? "shadowSubtitleDark" : "shadowSubtitleLight"
-            } text-center subTitle mb-5 my-md-5`}
+            } text-center subTitle mb-5 my-md-5 w-100`}
           >
             <span>Habitantes del Área: </span>
           </div>

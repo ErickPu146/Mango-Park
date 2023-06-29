@@ -69,8 +69,6 @@ const Contactos = () => {
                     </div>
                 </div>
             </main>
-
-            <Footer />
         </>
     );
 }
