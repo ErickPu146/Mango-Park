@@ -24,21 +24,22 @@
   height: 10rem;
 }
 
+.shadowSubtitleLight {
+  box-shadow: 0 0rem 1rem 0.3rem rgb(100, 100, 0);
+}
+
+.shadowSubtitleDark {
+  box-shadow: 0 0rem 1rem 0.3rem rgb(173, 216, 230);
+}
+
 .shadowCardLight {
-  box-shadow: 0 0rem 1rem 0.3rem rgb(0, 71, 171);
+  box-shadow: 0 0rem 1rem 0.3rem rgb(0, 48, 46);
 }
 
 .shadowCardDark {
   box-shadow: 0 0rem 1rem 0.3rem rgb(255, 255, 153);
 }
 
-.shadowSubtitleLight {
-  box-shadow: 0 0rem 1rem 0.3rem rgb(255, 165, 0);
-}
-
-.shadowSubtitleDark {
-  box-shadow: 0 0rem 1rem 0.3rem rgb(173, 216, 230);
-}
 
 
 @media (min-width: 768px) and (max-width: 991px) {

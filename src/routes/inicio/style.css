@@ -1,3 +1,15 @@
+.headerHome {
+    height: 90vh;
+    background-image: url(./images/imagen1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #26dbc9;
+}
+
+.subtitle {
+    font-family:'Sigmar';
+    font-size: 1rem;
+}
 
 .bg-1 {
     background-color: #1f1f1f;

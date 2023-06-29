@@ -45,6 +45,48 @@ const defaultAnimals = [
     nameAnimal: "tigrito",
     area: "Acuario",
     img: Animal1,
+  },  {
+    nameAnimal: "patito",
+    area: "segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
+  },  {
+    nameAnimal: "patito",
+    area: "segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
+  },  {
+    nameAnimal: "patito",
+    area: "segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
   },
 ];
 
@@ -52,6 +94,7 @@ const Zoologico = ({ background }) => {
   return (
     <>
       <Header />
+      
       <main
         className={`${
           background ? "text-bg-dark" : "text-bg-light"
