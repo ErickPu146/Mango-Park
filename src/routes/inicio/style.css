@@ -1,82 +1,142 @@
-
-.bg-1 {
-    background-color: #1f1f1f;
-    background-image: linear-gradient(180deg, #1f1f1f 0%, #0093E9 78%, #44e9ff 100%);
-    
+.headerHome {
+  background-image: linear-gradient(to top, #212529, 30%, transparent),
+    linear-gradient(to bottom, #212529 5%, 20%, transparent),
+    url(./images/imagen1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 38rem;
+  border-bottom: 0.5rem solid rgb(59, 57, 57);
 }
 
-.bg-2 {
-    background-color: #1f1f1f;
-    background-image: linear-gradient(0deg, #1f1f1f 0%, #0093E9 78%, #44e9ff 100%);
-    
-}   
+.headerText {
+  font-family: "Sigmar";
+}
 
+.headerTitle {
+  font-size: 2.5rem;
+  font-family: "Sigmar";
+  color: #26dbc9;
+}
+
+.headerSubtitle {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
 
 .relative {
-    position: relative;
+  position: relative;
 }
 
 .fondoAnimal1 {
-    transition: transform 1s ease-out;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  transition: transform 1s ease-out;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .fondoAnimal1:hover {
-    transform: scale(1.3);
+  transform: scale(1.3);
 }
-
 
 .fondoAnimal2 {
-    transition: transform 1s ease-out;
-    position: absolute;
-    top: 0;
-    left: 0;
+  transition: transform 1s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .fondoAnimal2:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .opacity {
-    opacity: 70%;
+  opacity: 80%;
 }
 
 .opacity:hover {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 .card-zoo1 {
-    background-color: rgb(185, 176, 3);    
-    color: #000000;
+  background-color: rgb(185, 176, 3);
+  color: #000000;
 }
 
 .card-zoo2 {
-    background-color: #e3ad40;
+  background-color: #e3ad40;
 }
 
 .card-zoo3 {
-    background-color: #4f76a0;
+  background-color: #4f76a0;
 }
 
 .card-zoo4 {
-    background-color: #f89fa1;
+  background-color: #f89fa1;
 }
 
 .card-zoo5 {
-    background-color: #F7CE68;
-    background-image: linear-gradient(135deg, #F7CE68 0%, #FBAB7E 52%);
+  background-color: #f7ce68;
+  background-image: linear-gradient(135deg, #f7ce68 0%, #fbab7e 52%);
 }
 
 .galeria .imgContainer {
-    position: relative;
-	overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .galeria .imgContainer img {
-	transition: transform 1s ease-out;
+  transition: transform 1s ease-out;
 }
 
-.galeria .imgContainer:hover img{
-    transform: scale(1.2);
-    border-radius: 50%;
+.galeria .imgContainer:hover img {
+  transform: scale(1.2);
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .headerHome {
+        height: 90vh;
+    }
+  .headerTitle {
+    font-size: 4rem;
+    font-family: "Sigmar";
+    color: #26dbc9;
+  }
+
+  .headerSubtitle {
+    font-size: 3rem;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 3000px) {
+    .headerHome {
+        height: 90vh;
+    }
+  .headerTitle {
+    font-size: 5.5rem;
+    font-family: "Sigmar";
+    color: #26dbc9;
+  }
+
+  .headerSubtitle {
+    font-size: 4rem;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 3001px) {
+    .headerHome {
+        height: 70rem;
+    }
+  .headerTitle {
+    font-size: 8rem;
+    font-family: "Sigmar";
+    color: #26dbc9;
+  }
+
+  .headerSubtitle {
+    font-size: 6.5rem;
+    color: #ffffff;
+  }
 }

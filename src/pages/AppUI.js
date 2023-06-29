@@ -1,43 +1,41 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Inicio } from '../routes/inicio';
 import { Ubicacion } from '../routes/ubicacion';
 import { Zoologico } from '../routes/zoologico';
 import { Tienda } from '../routes/tienda';
 import { Contactos } from '../routes/contactos';
-import { ParkContext } from '../context';
-
+import { Header } from '../containers/header'
+import { Footer } from '../containers/footer';
 
 const AppUI = () => {
-    const {
-        background,
-    } = useContext(ParkContext);
-    
     return (
         <>
             <Router>
+                <Header/>
                 <Routes>
                     <Route 
                         path="/" 
-                        element={<Inicio background={background}/>} 
+                        element={<Inicio/>} 
                     />
                     <Route 
                         path="/ubicacion" 
-                        element={<Ubicacion background={background}/>} 
+                        element={<Ubicacion/>} 
                     />
                     <Route 
                         path="/zoologico" 
-                        element={<Zoologico background={background}/>} 
+                        element={<Zoologico/>} 
                     />
                     <Route 
                         path="/tienda" 
-                        element={<Tienda background={background}/>} 
+                        element={<Tienda/>} 
                     />
                     <Route 
                         path="/contactos" 
-                        element={<Contactos background={background}/>} 
+                        element={<Contactos/>} 
                     />
                 </Routes>
+                <Footer/>
             </Router>
         </>
     );

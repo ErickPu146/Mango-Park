@@ -1,0 +1,34 @@
+.frontCard,
+.backCard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.frontCard {
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.backCard {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.card:hover .frontCard {
+  transform: rotateY(180deg);
+}
+
+.card:hover .backCard {
+  transform: rotateY(0);
+}
+
+.cardAnimal {
+  height: 15rem;
+}
+

@@ -1,18 +1,13 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Navbar, Container, Form } from 'react-bootstrap';
+import { Navbar, Container } from 'react-bootstrap';
 import './style.css';
 import logoZoo from './imagen-logo/logo-zoo.png';
-import { ParkContext } from '../../context';
 import { SelectorTheme } from '../../components/selectorTheme';
 import { InputSearch } from '../../components/inputSearch';
 
 
 const Header = () => {
-  const {
-    background,
-    setBackground,
-  } = useContext(ParkContext);
 
   const location = useLocation()
 
@@ -20,7 +15,7 @@ const Header = () => {
     <>
       <header className="sticky-top">
         <Navbar expand="lg" className="navAndFooter">
-          <Container fluid>
+          <Container>
             <Navbar.Brand>
               <Link
                 to="/"
@@ -37,7 +32,7 @@ const Header = () => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarMangoPark" className="white" />
             <Navbar.Collapse id="navbarMangoPark">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item class_li" >
                   <Link
                     to="/"
@@ -80,10 +75,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item class_li" >
-                  <SelectorTheme 
-                      background={background}
-                      setBackground={setBackground}
-                  />
+                  <SelectorTheme />
                 </li>
               </ul>
 

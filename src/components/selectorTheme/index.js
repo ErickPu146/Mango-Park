@@ -1,7 +1,13 @@
+import { useContext } from "react";
 import "./style.css";
+import { ParkContext } from "../../context";
 
-const SelectorTheme = ( { setBackground, background } ) => {
-  
+const SelectorTheme = () => {
+  const {
+    background,
+    setBackground,
+  } = useContext(ParkContext);
+
   return (
     <>
       <div
