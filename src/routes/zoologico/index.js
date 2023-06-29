@@ -17,7 +17,11 @@ const Zoologico = () => {
   } = useContext(ParkContext);
   return (
     <>
-      <div className="headerZoologico text-center d-flex align-items-center justify-content-center position-relative">
+      <div 
+        className={`
+        ${background ? 'headerZoologicoDark' : 'headerZoologicoLight'} headerZoologico text-center 
+          d-flex align-items-center justify-content-center position-relative`
+        }>
         <div className="headerText">
           <div className="mx-auto">
             <h1 className="headerTitle my-5">LAS MARAVILLAS DE MANGOPARK</h1>

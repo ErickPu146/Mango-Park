@@ -1,7 +1,4 @@
 .headerZoologico {
-  background-image: linear-gradient(to top, #212529, 30%, transparent),
-    linear-gradient(to bottom, #212529 5%, 20%, transparent),
-    url(./images/Imagen1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,6 +7,17 @@
   border-bottom: 0.5rem solid rgb(59, 57, 57);
 }
 
+.headerZoologicoLight {
+  background-image: linear-gradient(to top, #212529, 5%, transparent),
+  linear-gradient(to bottom, #212529 1%, 5%, transparent),
+    url(./images/Imagen1.jpg);
+}
+
+.headerZoologicoDark {
+  background-image: linear-gradient(to top, #212529, 20%, transparent),
+  linear-gradient(to bottom, #212529 2%, 15%, transparent),
+    url(./images/Imagen1.jpg);
+}
 
 .title {
   font-family: "Sigmar";
@@ -44,7 +52,7 @@
 }
 
 .shadowCardDark {
-  box-shadow: 0 0rem 1rem 0.3rem rgb(255, 255, 153);
+  box-shadow: 0 0rem 1rem 0.3rem rgb(255, 255, 155);
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -77,7 +85,7 @@
 
 @media (min-width: 3001px) {
   .headerZoologico {
-    height: 70rem;
+    height: 70vh;
   }
   .title {
     font-size: 7rem;
@@ -86,4 +94,3 @@
     font-size: 5rem;
   }
 }
-
