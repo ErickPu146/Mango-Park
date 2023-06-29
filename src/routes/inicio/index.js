@@ -13,7 +13,11 @@ const Inicio = () => {
   const { background } = useContext(ParkContext);
   return (
     <>
-      <div className="headerHome text-center d-flex align-items-center justify-content-center position-relative">
+      <div 
+        className={`
+          ${background ? 'headerHomeDark' : 'headerHomeLight'} headerHome text-center 
+          d-flex align-items-center justify-content-center position-relative`
+        }>
         <div className="headerText">
           <div className="mx-auto">
             <h1 className="headerTitle my-5">¡Bienvenido a MangoPark!</h1>

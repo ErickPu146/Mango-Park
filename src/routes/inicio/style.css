@@ -1,7 +1,4 @@
 .headerHome {
-  background-image: linear-gradient(to top, #212529, 30%, transparent),
-    linear-gradient(to bottom, #212529 5%, 20%, transparent),
-    url(./images/imagen1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,6 +6,19 @@
   height: 38rem;
   border-bottom: 0.5rem solid rgb(59, 57, 57);
 }
+
+.headerHomeLight {
+  background-image: linear-gradient(to top, #212529, 5%, transparent),
+  linear-gradient(to bottom, #212529 1%, 5%, transparent),
+  url(./images/imagen1.jpg);
+}
+
+.headerHomeDark {
+  background-image: linear-gradient(to top, #212529, 20%, transparent),
+  linear-gradient(to bottom, #212529 2%, 15%, transparent),
+  url(./images/imagen1.jpg);
+}
+
 
 .headerText {
   font-family: "Sigmar";
@@ -127,7 +137,7 @@
 
 @media (min-width: 3001px) {
     .headerHome {
-        height: 70rem;
+        height: 70vh;
     }
   .headerTitle {
     font-size: 8rem;
