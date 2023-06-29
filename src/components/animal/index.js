@@ -16,8 +16,8 @@ const Animal = ({ animal }) => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             className={`
-                ${isHovered & background ? "shadowDark" : ''}
-                ${isHovered & !background ? 'shadowLight' : ''} 
+                ${isHovered & background ? "shadowCardDark" : ''}
+                ${isHovered & !background ? 'shadowCardLight' : ''} 
                 CardAnimal`}
         >
           <span className="position-relative frontCard">

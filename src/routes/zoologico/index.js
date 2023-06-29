@@ -68,7 +68,7 @@ const Zoologico = ({ background }) => {
         </div>
 
         <Container className="pt-5">
-          <div className={`${background ? 'shadowLight' : 'shadowDark'} text-center subTitle mb-5 my-md-5`}>
+          <div className={`${background ? 'shadowSubtitleDark' : 'shadowSubtitleLight'} text-center subTitle mb-5 my-md-5`}>
             <span>Descubre Nuestras Áreas</span>
           </div>
 
@@ -78,7 +78,7 @@ const Zoologico = ({ background }) => {
             ))}
           </Row>
 
-          <div className={`${background ? 'shadowLight' : 'shadowDark'} text-center subTitle mb-5 my-md-5`}>
+          <div className={`${background ? 'shadowSubtitleDark' : 'shadowSubtitleLight'} text-center subTitle mb-5 my-md-5`}>
             <span>Habitantes del Área: </span>
           </div>
 

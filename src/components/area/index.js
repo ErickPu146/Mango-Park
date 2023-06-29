@@ -13,8 +13,8 @@ const Area = ({ area }) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className={`
-        ${isHovered & background ? "shadowDark" : ""}
-        ${isHovered & !background ? "shadowLight" : ""} 
+        ${isHovered & background ? "shadowCardDark" : ""}
+        ${isHovered & !background ? "shadowCardLight" : ""} 
         cardArea`}
       >
         <Card.Img src={area.img} className="imgResponsive" />
