@@ -3,7 +3,7 @@ import { Card, Col } from "react-bootstrap";
 import { ParkContext } from "../../context";
 
 const Area = ({ area }) => {
-  const { background } = useContext(ParkContext);
+  const { background, filterAnimals } = useContext(ParkContext);
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -12,6 +12,7 @@ const Area = ({ area }) => {
       <Card
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onClick={() => filterAnimals(area.areaName)}
         className={`
         ${isHovered & background ? "shadowCardDark" : ""}
         ${isHovered & !background ? "shadowCardLight" : ""} 
@@ -19,7 +20,7 @@ const Area = ({ area }) => {
       >
         <Card.Img src={area.img} className="imgResponsive" />
         <Card.Title className="lh-sm text-light position-absolute bottom-0 ps-2">
-          {area.nameArea}
+          {area.areaName}
         </Card.Title>
       </Card>
     </Col>
@@ -27,3 +28,4 @@ const Area = ({ area }) => {
 };
 
 export { Area };
+

@@ -12,7 +12,7 @@ const Zoologico = () => {
     defaultAreas,
     currentPage,
     setCurrentPage,
-    items,
+    itemsPagination,
     totalPages,
   } = useContext(ParkContext);
   return (
@@ -62,7 +62,7 @@ const Zoologico = () => {
               onClick={() => setCurrentPage(currentPage - 1)}
               disabled={currentPage === 1}
             />
-            {items}
+            {itemsPagination}
             <Pagination.Next
               onClick={() => setCurrentPage(currentPage + 1)}
               disabled={currentPage === totalPages}

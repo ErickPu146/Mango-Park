@@ -1,17 +1,16 @@
 import { useContext } from "react";
-import { Footer } from "../../containers/footer";
 import { ParkContext } from "../../context";
 
-
 const Tienda = () => {
-    const {
-        background,
-    } = useContext(ParkContext);
-    return (
-        <>
+  const { background } = useContext(ParkContext);
 
-        </>
-    );
-}
+  return (
+    <>
+      <main className={`${background ? "bg-dark" : "bg-light"}`}>
+        
+      </main>
+    </>
+  );
+};
 
 export { Tienda };
