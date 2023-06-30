@@ -1,5 +1,4 @@
 import './style.css';
-import { Footer } from "../../containers/footer/";
 import { Form } from 'react-bootstrap'
 import { useContext, useState } from "react";
 import { ParkContext } from '../../context';
