@@ -137,7 +137,7 @@
 
 @media (min-width: 3001px) {
     .headerHome {
-        height: 70vh;
+        height: 100vh;
     }
   .headerTitle {
     font-size: 8rem;

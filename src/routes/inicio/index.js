@@ -9,16 +9,42 @@ import imagen5 from "./images/imagen5.jpg";
 import { useContext } from "react";
 import { ParkContext } from "../../context";
 
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: "aos-init", // class applied after initialization
+  animatedClassName: "aos-animate", // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: "ease", // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+});
+
 const Inicio = () => {
   const { background } = useContext(ParkContext);
   return (
     <>
-      <div 
+      <div
         className={`
-          ${background ? 'headerHomeDark' : 'headerHomeLight'} headerHome text-center 
-          d-flex align-items-center justify-content-center position-relative`
-        }>
-        <div className="headerText">
+          ${
+            background ? "headerHomeDark" : "headerHomeLight"
+          } headerHome text-center 
+          d-flex align-items-center justify-content-center position-relative`}
+      >
+        <div data-aos="fade-in" className="headerText">
           <div className="mx-auto">
             <h1 className="headerTitle my-5">¡Bienvenido a MangoPark!</h1>
             <p className="headerSubtitle">
@@ -38,10 +64,18 @@ const Inicio = () => {
           />
           <div className="container text-center relative">
             <div className="row py-5">
-              <div className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-5 col-xl-4 mb-md-3">
-                <div
-                  className="opacity card-zoo1 rounded-5 card-body d-flex flex-column justify-content-center align-items-center"
-                >
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-350"
+                data-aos-delay="10"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+                className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-5 col-xl-4 mb-md-3"
+              >
+                <div className="opacity card-zoo1 rounded-5 card-body d-flex flex-column justify-content-center align-items-center">
                   <h1 className="w-100 border-bottom">Nosotros</h1>
                   <p className="card-text fs-5">
                     Desde el año 2005, nuestra empresa se enorgullece de contar
@@ -51,7 +85,17 @@ const Inicio = () => {
                   </p>
                 </div>
               </div>
-              <div className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-7 col-xl-6 mb-md-3">
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-200"
+                data-aos-delay="10"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+                className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-7 col-xl-6 mb-md-3"
+              >
                 <div className="opacity card-zoo2 rounded-5 card-body d-flex flex-column justify-content-center align-items-center">
                   <h1 className="w-100 border-bottom">Compromiso</h1>
                   <p className="card-text fs-5">
@@ -65,7 +109,17 @@ const Inicio = () => {
                   </p>
                 </div>
               </div>
-              <div className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-7 col-xl-6">
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-150"
+                data-aos-delay="10"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+                className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-7 col-xl-6"
+              >
                 <div
                   className={`${
                     background ? "card-zoo3" : "bg-success"
@@ -82,7 +136,17 @@ const Inicio = () => {
                   </p>
                 </div>
               </div>
-              <div className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-5 col-xl-4">
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-100"
+                data-aos-delay="10"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+                className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-5 col-xl-4"
+              >
                 <div className="opacity card-zoo4 rounded-5 card-body d-flex flex-column justify-content-center align-items-center">
                   <h1 className="w-100 border-bottom">Descubre</h1>
                   <p className="card-text fs-5">
@@ -106,6 +170,14 @@ const Inicio = () => {
 
         <div className={`${background ? "bg-dark" : "bg-light"} py-5`}>
           <div
+            data-aos="fade-up"
+            data-aos-offset="-450"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
             className={`${
               background ? "card-zoo5" : "text-bg-dark"
             } opacity container my-5 text-center rounded-5`}

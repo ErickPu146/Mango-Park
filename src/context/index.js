@@ -25,6 +25,198 @@ const defaultAreas = [
 
 const defaultAnimals = [
   {
+    nameAnimal: "ceboshita",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "patito",
+    area: "Segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "Tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "patito",
+    area: "Segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "Tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "jandrita",
+    area: "Segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "Tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "jandrita",
+    area: "Segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "Tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
+  },{
+    nameAnimal: "chiquitin",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "jandrita",
+    area: "Segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "Tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "patito",
+    area: "Segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "leonsisho",
+    area: "Tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "patito",
+    area: "Segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "leonsisho",
+    area: "Tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "quesito",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "gatisho",
+    area: "Segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "Tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "quesito",
+    area: "Acuario",
+    img: Animal1,
+  },{
+    nameAnimal: "Pepito",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "gatisho",
+    area: "Segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "Tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "quesito",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "patito",
+    area: "Segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "Tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "patito",
+    area: "Segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "juanito",
+    area: "Tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "patito",
+    area: "Segunda",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tomatito",
+    area: "Tercera",
+    img: Animal1,
+  },
+  {
+    nameAnimal: "tigrito",
+    area: "Acuario",
+    img: Animal1,
+  },{
     nameAnimal: "Pepito",
     area: "Acuario",
     img: Animal1,
@@ -35,7 +227,7 @@ const defaultAnimals = [
     img: Animal1,
   },
   {
-    nameAnimal: "juanito",
+    nameAnimal: "tomatito",
     area: "Tercera",
     img: Animal1,
   },
@@ -45,7 +237,7 @@ const defaultAnimals = [
     img: Animal1,
   },
   {
-    nameAnimal: "patito",
+    nameAnimal: "pavito",
     area: "Segunda",
     img: Animal1,
   },
@@ -60,7 +252,7 @@ const defaultAnimals = [
     img: Animal1,
   },
   {
-    nameAnimal: "patito",
+    nameAnimal: "pavito",
     area: "Segunda",
     img: Animal1,
   },
@@ -89,199 +281,7 @@ const defaultAnimals = [
     area: "Acuario",
     img: Animal1,
   },{
-    nameAnimal: "Pepito",
-    area: "Acuario",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "patito",
-    area: "Segunda",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "juanito",
-    area: "Tercera",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "tigrito",
-    area: "Acuario",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "patito",
-    area: "Segunda",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "juanito",
-    area: "Tercera",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "tigrito",
-    area: "Acuario",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "patito",
-    area: "Segunda",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "juanito",
-    area: "Tercera",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "tigrito",
-    area: "Acuario",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "patito",
-    area: "Segunda",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "juanito",
-    area: "Tercera",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "tigrito",
-    area: "Acuario",
-    img: Animal1,
-  },{
-    nameAnimal: "Pepito",
-    area: "Acuario",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "patito",
-    area: "Segunda",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "juanito",
-    area: "Tercera",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "tigrito",
-    area: "Acuario",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "patito",
-    area: "Segunda",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "juanito",
-    area: "Tercera",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "tigrito",
-    area: "Acuario",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "patito",
-    area: "Segunda",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "juanito",
-    area: "Tercera",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "tigrito",
-    area: "Acuario",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "patito",
-    area: "Segunda",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "juanito",
-    area: "Tercera",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "tigrito",
-    area: "Acuario",
-    img: Animal1,
-  },{
-    nameAnimal: "Pepito",
-    area: "Acuario",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "patito",
-    area: "Segunda",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "juanito",
-    area: "Tercera",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "tigrito",
-    area: "Acuario",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "patito",
-    area: "Segunda",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "juanito",
-    area: "Tercera",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "tigrito",
-    area: "Acuario",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "patito",
-    area: "Segunda",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "juanito",
-    area: "Tercera",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "tigrito",
-    area: "Acuario",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "patito",
-    area: "Segunda",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "juanito",
-    area: "Tercera",
-    img: Animal1,
-  },
-  {
-    nameAnimal: "tigrito",
-    area: "Acuario",
-    img: Animal1,
-  },{
-    nameAnimal: "Pepito",
+    nameAnimal: "chiquitin",
     area: "Acuario",
     img: Animal1,
   },
