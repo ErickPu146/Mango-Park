@@ -24,6 +24,11 @@
   font-family: "Sigmar";
 }
 
+.contentText {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+
 .headerTitle {
   font-size: 2.5rem;
   font-family: "Sigmar";
@@ -70,6 +75,10 @@
 .card-zoo1 {
   background-color: rgb(185, 176, 3);
   color: #000000;
+}
+
+.bg-cards-dark {
+  background-color: #343a40;
 }
 
 .card-zoo2 {
