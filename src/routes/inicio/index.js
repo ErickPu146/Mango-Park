@@ -1,6 +1,4 @@
 import "./style.css";
-import fondoAnimal1 from "./images/fondoAnimal1.png";
-import fondoAnimal2 from "./images/fondoAnimal2.png";
 import imagen1 from "./images/imagen1.jpg";
 import imagen2 from "./images/imagen2.jpg";
 import imagen3 from "./images/imagen3.jpg";
@@ -57,15 +55,13 @@ const Inicio = () => {
       </div>
 
       <main className="position-relative">
-        <div className={`${background ? "bg-dark" : "bg-light"} py-5 relative`}>
-          <img
-            src={fondoAnimal2}
-            alt="Animal"
-            className="d-none d-lg-block fondoAnimal2"
-          />
-
+        <div
+          className={`${
+            background ? "text-bg-dark" : "text-bg-light"
+          } position-relative py-md-5 relative`}
+        >
           <Container className="text-center relative">
-            <Row className="py-5">
+            <Row className="py-5 gap-0 row-gap-4">
               <Col
                 sm={12}
                 data-aos="fade-up"
@@ -80,9 +76,14 @@ const Inicio = () => {
                 <Card>
                   <Card.Body>
                     <Row>
-                      <Col md={6} className="d-md-flex flex-column justify-content-center gap-5 px-md-4">
-                        <Card.Title className="fs-1 headerText">Nosotros</Card.Title>
-                        <Card.Text className="contentText">
+                      <Col
+                        md={6}
+                        className="d-md-flex flex-column justify-content-center px-md-4 py-4"
+                      >
+                        <Card.Title className="fs-1 headerText">
+                          Nosotros
+                        </Card.Title>
+                        <Card.Text className="contentText fw-semibold">
                           Desde el año 2005, nuestra empresa se enorgullece de
                           contar con una amplia experiencia en el diseño y
                           construcción de espacios naturales que brindan un
@@ -90,8 +91,11 @@ const Inicio = () => {
                           de especies.
                         </Card.Text>
                       </Col>
-                      <Col md={6}>
-                        <Card.Img src={imagen2} />
+                      <Col md={6} className="d-md-flex align-items-center">
+                        <Card.Img
+                          src={imagen2}
+                          className="h-100 img-fluid imgRespon"
+                        />
                       </Col>
                     </Row>
                   </Card.Body>
@@ -109,24 +113,34 @@ const Inicio = () => {
                 data-aos-once="false"
                 data-aos-anchor-placement="top-center"
               >
-                <Card>
+                <Card className="bg-transparent border-0 text-light h-100">
                   <Card.Body>
-                    <Row>
-                      <Col sm={12}>
-                        <Card.Title className="fs-1 headerText">Compromiso</Card.Title>
-                        <Card.Text className="contentText">
-                          Nuestro compromiso nos impulsa a crear hábitats que reflejen
-                          fielmente los entornos naturales de cada especie,
-                          promoviendo su bienestar y preservando la
+                    <Row className="align-items-end">
+                      <Col
+                        sm={12}
+                        className="d-md-flex flex-column justify-content-center py-4"
+                      >
+                        <Card.Title className="fs-1 headerText">
+                          <div
+                            className={`${
+                              background
+                                ? "shadowSubtitleDark"
+                                : "shadowSubtitleLight"
+                            } text-center subTitle mb-5 my-md-5 w-100`}
+                          >
+                            <span>Compromiso</span>
+                          </div>
+                        </Card.Title>
+                        <Card.Text className="contentText fw-semibold">
+                          Nuestro compromiso nos impulsa a crear hábitats que
+                          reflejen fielmente los entornos naturales de cada
+                          especie, promoviendo su bienestar y preservando la
                           biodiversidad. Nos esforzamos por proporcionar a
                           nuestros visitantes una experiencia educativa y
                           emocionante, fomentando la comprensión y el respeto
                           hacia los animales y su hábitat.
                         </Card.Text>
-                      </Col>
-                      <Col>
-                        <Card.Img src={imagen2} />
-                      </Col>
+                      </Col>  
                     </Row>
                   </Card.Body>
                 </Card>
@@ -143,12 +157,25 @@ const Inicio = () => {
                 data-aos-once="false"
                 data-aos-anchor-placement="top-center"
               >
-                <Card>
+                <Card className="bg-transparent border-0 text-light h-100">
                   <Card.Body>
                     <Row>
-                      <Col sm={12}>
-                        <Card.Title className="fs-1 headerText">Proyectos</Card.Title>
-                        <Card.Text className="contentText">
+                      <Col
+                        sm={12}
+                        className="d-md-flex flex-column justify-content-center py-4"
+                      >
+                        <Card.Title className="fs-1 headerText">
+                          <div
+                            className={`${
+                              background
+                                ? "shadowSubtitleDark"
+                                : "shadowSubtitleLight"
+                            } text-center subTitle mb-5 my-md-5 w-100`}
+                          >
+                            <span>Proyectos</span>
+                          </div>
+                        </Card.Title>
+                        <Card.Text className="contentText fw-semibold">
                           Cada proyecto del zoológico que emprendemos es único y
                           se adapta a las necesidades y características de la
                           ubicación y las especies que albergará. Contamos con
@@ -156,10 +183,7 @@ const Inicio = () => {
                           para crear un ambiente atractivo y cautivador tanto
                           para los visitantes como para los animales.
                         </Card.Text>
-                      </Col>
-                      <Col>
-                        <Card.Img src={imagen2} />
-                      </Col>
+                      </Col>  
                     </Row>
                   </Card.Body>
                 </Card>
@@ -179,19 +203,24 @@ const Inicio = () => {
                 <Card>
                   <Card.Body>
                     <Row>
-                      <Col md={6}>
-                        <Card.Title className="fs-1 headerText">Descubre</Card.Title>
-                        <Card.Text className="contentText">
-                        Te invitamos a explorar nuestro sitio web y descubrir la
-                    maravillosa diversidad de nuestro zoológico, así como las
-                    iniciativas de conservación en las que estamos
-                    comprometidos. Únete a nosotros en esta apasionante aventura
-                    en la protección y preservación de la vida silvestre desde
-                    el año 2005.
+                      <Col
+                        md={6}
+                        className="d-md-flex flex-column justify-content-center px-md-4 py-4"
+                      >
+                        <Card.Title className="fs-1 headerText">
+                          Descubre
+                        </Card.Title>
+                        <Card.Text className="contentText fw-semibold">
+                          Te invitamos a explorar nuestro sitio web y descubrir
+                          la maravillosa diversidad de nuestro zoológico, así
+                          como las iniciativas de conservación en las que
+                          estamos comprometidos. Únete a nosotros en esta
+                          apasionante aventura en la protección y preservación
+                          de la vida silvestre desde el año 2005.
                         </Card.Text>
                       </Col>
-                      <Col md={6}>
-                        <Card.Img src={imagen2} />
+                      <Col md={6} className="d-md-flex align-items-center">
+                        <Card.Img src={imagen2} className="imgRespon h-100" />
                       </Col>
                     </Row>
                   </Card.Body>
@@ -199,42 +228,83 @@ const Inicio = () => {
               </Col>
             </Row>
           </Container>
-          <div className="container text-center relative">
-            <div className="row py-5">
-              <div className="card bg-transparent border-0 mt-4 mt-md-0 col-12">
-                <div className="opacity text-light bg-cards-dark rounded-5 card-body d-flex flex-column justify-content-center align-items-center"></div>
-              </div>
-              <div className="card bg-transparent border-0 mt-4 mt-md-0 col-12 col-md-6">
-                <div className="opacity card-zoo2 rounded-5 card-body d-flex flex-column justify-content-center align-items-center">
-                  <p className="card-text fs-5"></p>
-                </div>
-              </div>
-              <div>
-                <div
-                  className={`${
-                    background ? "card-zoo3" : "bg-success"
-                  } opacity text-light rounded-5 card-body d-flex flex-column justify-content-center align-items-center`}
-                >
-                  <p className="card-text fs-5"></p>
-                </div>
-              </div>
-              <div className="card bg-transparent border-0 mt-4 mt-md-0 col-12">
-                <div className="opacity card-zoo4 rounded-5 card-body d-flex flex-column justify-content-center align-items-center">
-                  <p className="card-text fs-5">
-
-                  </p>
-                </div>
-              </div>
-            </div>
-            <img
-              src={fondoAnimal1}
-              alt="Animal"
-              className="col-2 fondoAnimal1 d-none d-xl-block"
-            />
-          </div>
         </div>
 
-        <div className={`${background ? "bg-dark" : "bg-light"} py-5`}>
+        <div
+          className={`${background ? "bg-dark" : "bg-light"} pb-md-5 relative`}
+        >
+          <Container className="text-center relative">
+            <Row className="py-5 ">
+              <Col
+                sm={12}
+                data-aos="fade-up"
+                data-aos-offset="-350"
+                data-aos-delay="10"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+              >
+                <Card>
+                  <Card.Body>
+                    <Row className="gap-0 row-gap-4">
+                      <Col
+                        md={6}
+                        className="d-md-flex flex-column justify-content-center px-md-4 py-4"
+                      >
+                        <Card.Title className="fs-1 headerText">
+                          Protección y bienestar
+                        </Card.Title>
+                        <Card.Text className="contentText fw-semibold">
+                          Te invitamos a visitarnos y descubrir cómo trabajamos
+                          incansablemente para proteger y preservar a nuestros
+                          animales. ¡Únete a nosotros en esta noble causa!"
+                        </Card.Text>
+                      </Col>
+                      <Col md={6} className="d-md-flex align-items-center">
+                        <Card.Img
+                          src={imagen1}
+                          className="h-100 img-fluid imgRespon"
+                        />
+                      </Col>
+                      <Col xs={6} md={3}>
+                        <img
+                          className="rounded-3 img-fluid w-100 h-100"
+                          src={imagen2}
+                          alt="Imagen2"
+                        />
+                      </Col>
+                      <Col xs={6} md={3}>
+                        <img
+                          className="rounded-3 img-fluid w-100 h-100"
+                          src={imagen3}
+                          alt="Imagen3"
+                        />
+                      </Col>
+                      <Col xs={6} md={3}>
+                        <img
+                          className="rounded-3 img-fluid w-100 h-100"
+                          src={imagen4}
+                          alt="Imagen4"
+                        />
+                      </Col>
+                      <Col xs={6} md={3}>
+                        <img
+                          className="rounded-3 img-fluid w-100 h-100"
+                          src={imagen5}
+                          alt="Imagen4"
+                        />
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+
+        <div className={`${background ? "bg-dark" : "bg-light"} py-md-5`}>
           <div
             data-aos="fade-up"
             data-aos-offset="-450"
@@ -248,15 +318,7 @@ const Inicio = () => {
               background ? "card-zoo5" : "text-bg-dark"
             } opacity container my-5 text-center rounded-5`}
           >
-            <div className="row align-items-center mt-5 galeria">
-              <div className="col-12 col-md-6 p-3">
-                <h1>Protección y bienestar</h1>
-                <p className="fs-4">
-                  Te invitamos a visitarnos y descubrir cómo trabajamos
-                  incansablemente para proteger y preservar a nuestros animales.
-                  ¡Únete a nosotros en esta noble causa!"
-                </p>
-              </div>
+            <div className="row align-items-center galeria">
               <div className="col-12 col-md-6 imgContainer">
                 <img
                   className="rounded-5 img-fluid"
