@@ -9,19 +9,20 @@
 
 .headerHomeLight {
   background-image: linear-gradient(to top, #212529, 5%, transparent),
-  linear-gradient(to bottom, #212529 1%, 5%, transparent),
-  url(./images/imagen1.jpg);
+    linear-gradient(to bottom, #212529 1%, 5%, transparent),
+    url(./images/imagen1.jpg);
 }
 
 .headerHomeDark {
   background-image: linear-gradient(to top, #212529, 20%, transparent),
-  linear-gradient(to bottom, #212529 2%, 15%, transparent),
-  url(./images/imagen1.jpg);
+    linear-gradient(to bottom, #212529 2%, 15%, transparent),
+    url(./images/imagen1.jpg);
 }
-
 
 .headerText {
   font-family: "Sigmar";
+  padding: 0.2rem 0;
+  font-size: 1.7rem;
 }
 
 .contentText {
@@ -44,105 +45,50 @@
   position: relative;
 }
 
-.card-vertical {
-  height: 45rem;
+.cardToLight {
+  transition: transform 0.3s ease;
+
+}
+.cardToLight:hover {
+  background-color: #ffffff;
+  background-image: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ffffff 20%,
+    #26dbc9 80%,
+    #ffffff 90%
+  );
+
+  transform: scale(1.02);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.fondoAnimal1 {
-  transition: transform 1s ease-out;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.cardToDark {
+  border: 1px solid rgb(40, 39, 39);
+  background-color: #30363e;
+  transition: transform 0.3s ease;
 }
-.fondoAnimal1:hover {
-  transform: scale(1.3);
+.cardToDark:hover {
+  background-color: #30363e;
+  background-image: linear-gradient(
+    90deg,
+    #30363e 0%,
+    #30363e 20%,
+    #276440 80%,
+    #30363e 90%
+  );
+
+  transform: scale(1.02);
 }
 
-.fondoAnimal2 {
-  transition: transform 1s ease-out;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.fondoAnimal2:hover {
-  transform: scale(1.2);
-}
-
-.opacity {
-  opacity: 80%;
-}
-
-.opacity:hover {
-  opacity: 100%;
-}
-
-.card-zoo1 {
-  background-color: rgb(185, 176, 3);
-  color: #000000;
-}
-
-.bg-cards-dark {
-  background-color: #343a40;
-}
-
-.card-zoo2 {
-  background-color: #e3ad40;
-}
-
-.card-zoo3 {
-  background-color: #4f76a0;
-}
-
-.card-zoo4 {
-  background-color: #f89fa1;
-}
-
-.card-zoo5 {
-  background-color: #f7ce68;
-  background-image: linear-gradient(135deg, #f7ce68 0%, #fbab7e 52%);
-}
-
-.galeria .imgContainer {
-  position: relative;
-  overflow: hidden;
-}
-
-.galeria .imgContainer img {
-  transition: transform 1s ease-out;
-  overflow: hidden;
-}
-
-.galeria .imgContainer:hover img {
-  transform: scale(1.2);
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-
-
-.imgRespon {
-  object-fit: cover;
+.textBody {
+  font-size: 1.5rem;
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .headerHome {
-        height: 90vh;
-    }
+  .headerHome {
+    height: 90vh;
+  }
   .headerTitle {
     font-size: 4rem;
     font-family: "Sigmar";
@@ -157,12 +103,16 @@
     font-size: 3rem;
     color: #ffffff;
   }
+
+  .textBody {
+    font-size: 2.6rem;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 3000px) {
-    .headerHome {
-        height: 90vh;
-    }
+  .headerHome {
+    height: 90vh;
+  }
   .headerTitle {
     font-size: 5.5rem;
     font-family: "Sigmar";
@@ -173,12 +123,20 @@
     font-size: 4rem;
     color: #ffffff;
   }
+
+  .headerText {
+    font-size: 2.3rem;
+  }
+
+  .textBody {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 3001px) {
-    .headerHome {
-        height: 100vh;
-    }
+  .headerHome {
+    height: 100vh;
+  }
   .headerTitle {
     font-size: 8rem;
     font-family: "Sigmar";
@@ -188,5 +146,12 @@
   .headerSubtitle {
     font-size: 6.5rem;
     color: #ffffff;
+  }
+
+  .headerText {
+    font-size: 3rem;
+  }
+  .textBody {
+    font-size: 4rem;
   }
 }

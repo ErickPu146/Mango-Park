@@ -57,7 +57,7 @@ const Inicio = () => {
       <main className="position-relative">
         <div
           className={`${
-            background ? "text-bg-dark" : "text-bg-light"
+            background ? "bg-dark" : "bg-light"
           } position-relative py-md-5 relative`}
         >
           <Container className="text-center relative">
@@ -73,7 +73,11 @@ const Inicio = () => {
                 data-aos-once="false"
                 data-aos-anchor-placement="top-center"
               >
-                <Card>
+                <Card
+                  className={`${
+                    background ? "cardToDark text-light" : "cardToLight"
+                  }`}
+                >
                   <Card.Body>
                     <Row>
                       <Col
@@ -113,20 +117,24 @@ const Inicio = () => {
                 data-aos-once="false"
                 data-aos-anchor-placement="top-center"
               >
-                <Card className="bg-transparent border-0 text-light h-100">
+                <Card
+                  className={`${
+                    background ? "text-bg-dark" : "text-bg-light"
+                  } bg-transparent border-0 h-100`}
+                >
                   <Card.Body>
                     <Row className="align-items-end">
                       <Col
                         sm={12}
                         className="d-md-flex flex-column justify-content-center py-4"
                       >
-                        <Card.Title className="fs-1 headerText">
+                        <Card.Title>
                           <div
                             className={`${
                               background
                                 ? "shadowSubtitleDark"
                                 : "shadowSubtitleLight"
-                            } text-center subTitle mb-5 my-md-5 w-100`}
+                            } text-center headerText mb-5 my-md-5 w-100`}
                           >
                             <span>Compromiso</span>
                           </div>
@@ -140,7 +148,7 @@ const Inicio = () => {
                           emocionante, fomentando la comprensión y el respeto
                           hacia los animales y su hábitat.
                         </Card.Text>
-                      </Col>  
+                      </Col>
                     </Row>
                   </Card.Body>
                 </Card>
@@ -157,20 +165,24 @@ const Inicio = () => {
                 data-aos-once="false"
                 data-aos-anchor-placement="top-center"
               >
-                <Card className="bg-transparent border-0 text-light h-100">
+                <Card
+                  className={`${
+                    background ? "text-bg-dark" : "text-bg-light"
+                  } bg-transparent border-0 h-100`}
+                >
                   <Card.Body>
                     <Row>
                       <Col
                         sm={12}
                         className="d-md-flex flex-column justify-content-center py-4"
                       >
-                        <Card.Title className="fs-1 headerText">
+                        <Card.Title>
                           <div
                             className={`${
                               background
                                 ? "shadowSubtitleDark"
                                 : "shadowSubtitleLight"
-                            } text-center subTitle mb-5 my-md-5 w-100`}
+                            } text-center headerText mb-5 my-md-5 w-100`}
                           >
                             <span>Proyectos</span>
                           </div>
@@ -183,7 +195,7 @@ const Inicio = () => {
                           para crear un ambiente atractivo y cautivador tanto
                           para los visitantes como para los animales.
                         </Card.Text>
-                      </Col>  
+                      </Col>
                     </Row>
                   </Card.Body>
                 </Card>
@@ -192,7 +204,7 @@ const Inicio = () => {
               <Col
                 sm={12}
                 data-aos="fade-up"
-                data-aos-offset="-100"
+                data-aos-offset="-150"
                 data-aos-delay="10"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
@@ -200,7 +212,11 @@ const Inicio = () => {
                 data-aos-once="false"
                 data-aos-anchor-placement="top-center"
               >
-                <Card>
+                <Card
+                  className={`${
+                    background ? "cardToDark text-light" : "cardToLight"
+                  }`}
+                >
                   <Card.Body>
                     <Row>
                       <Col
@@ -231,9 +247,11 @@ const Inicio = () => {
         </div>
 
         <div
-          className={`${background ? "bg-dark" : "bg-light"} pb-md-5 relative`}
+          className={`${
+            background ? "text-bg-dark" : "text-bg-light"
+          } pb-md-5 relative`}
         >
-          <Container className="text-center relative">
+          <Container className="relative">
             <Row className="py-5 ">
               <Col
                 sm={12}
@@ -246,17 +264,31 @@ const Inicio = () => {
                 data-aos-once="false"
                 data-aos-anchor-placement="top-center"
               >
-                <Card>
+                <Card
+                  className={`${
+                    background ? "cardToDark text-light" : "cardToLight"
+                  }`}
+                >
                   <Card.Body>
                     <Row className="gap-0 row-gap-4">
                       <Col
-                        md={6}
+                        sm={12}
                         className="d-md-flex flex-column justify-content-center px-md-4 py-4"
                       >
                         <Card.Title className="fs-1 headerText">
-                          Protección y bienestar
+                          <div
+                            className={`${
+                              background
+                                ? "shadowSubtitleDark"
+                                : "shadowSubtitleLight"
+                            } text-center subTitle w-100`}
+                          >
+                            <span>Proteccion y bienestar</span>
+                          </div>
                         </Card.Title>
-                        <Card.Text className="contentText fw-semibold">
+                      </Col>
+                      <Col xs={12}>
+                        <Card.Text className="textBody fw-semibold px-md-5 lh-1">
                           Te invitamos a visitarnos y descubrir cómo trabajamos
                           incansablemente para proteger y preservar a nuestros
                           animales. ¡Únete a nosotros en esta noble causa!"
@@ -302,62 +334,6 @@ const Inicio = () => {
               </Col>
             </Row>
           </Container>
-        </div>
-
-        <div className={`${background ? "bg-dark" : "bg-light"} py-md-5`}>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="-450"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
-            className={`${
-              background ? "card-zoo5" : "text-bg-dark"
-            } opacity container my-5 text-center rounded-5`}
-          >
-            <div className="row align-items-center galeria">
-              <div className="col-12 col-md-6 imgContainer">
-                <img
-                  className="rounded-5 img-fluid"
-                  src={imagen1}
-                  alt="Imagen1"
-                />
-              </div>
-            </div>
-            <div className="row mb-3 py-4 galeria">
-              <div className="col-md-3 col-6 mb-3 mb-lg-0 imgContainer">
-                <img
-                  className="rounded-3 img-fluid w-100 h-100"
-                  src={imagen2}
-                  alt="Imagen2"
-                />
-              </div>
-              <div className="col-md-3 col-6 mb-3 mb-lg-0 imgContainer">
-                <img
-                  className="rounded-3 img-fluid w-100 h-100"
-                  src={imagen3}
-                  alt="Imagen3"
-                />
-              </div>
-              <div className="col-md-3 col-6 mb-3 mb-lg-0 imgContainer">
-                <img
-                  className="rounded-3 img-fluid w-100 h-100"
-                  src={imagen4}
-                  alt="Imagen4"
-                />
-              </div>
-              <div className="col-md-3 col-6 mb-3 mb-lg-0 imgContainer">
-                <img
-                  className="rounded-3 img-fluid w-100 h-100"
-                  src={imagen5}
-                  alt="Imagen5"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </main>
     </>
