@@ -1,5 +1,4 @@
 import "./style.css";
-import imagen1 from "./images/imagen1.jpg";
 import imagen2 from "./images/imagen2.jpg";
 import imagen3 from "./images/imagen3.jpg";
 import imagen4 from "./images/imagen4.jpg";
@@ -43,15 +42,17 @@ const Inicio = () => {
           } headerHome text-center 
           d-flex align-items-center justify-content-center position-relative`}
       >
-        <div data-aos="fade-in" className="headerText">
-          <div className="mx-auto">
-            <h1 className="headerTitle my-5">¡Bienvenido a MangoPark!</h1>
-            <p className="headerSubtitle">
-              Descubre la magia de la vida salvaje en nuestro increíble
-              zoológico.
-            </p>
+        <Container>
+          <div data-aos="fade-in" className="headerText">
+            <div className="mx-auto">
+              <h1 className="headerTitle my-5">¡Bienvenido a MangoPark!</h1>
+              <p className="headerSubtitle">
+                Descubre la magia de la vida salvaje en nuestro increíble
+                zoológico.
+              </p>
+            </div>
           </div>
-        </div>
+        </Container>
       </div>
 
       <main className="position-relative">
@@ -65,7 +66,7 @@ const Inicio = () => {
               <Col
                 sm={12}
                 data-aos="fade-up"
-                data-aos-offset="-350"
+                data-aos-offset="-200"
                 data-aos-delay="10"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
@@ -87,7 +88,7 @@ const Inicio = () => {
                         <Card.Title className="fs-1 headerText ">
                           Nosotros
                         </Card.Title>
-                        <Card.Text className="contentText fw-semibold py-5">
+                        <Card.Text className="contentText fw-semibold py-5 px-lg-3">
                           Desde el año 2005, nuestra empresa se enorgullece de
                           contar con una amplia experiencia en el diseño y
                           construcción de espacios naturales que brindan un
@@ -111,7 +112,7 @@ const Inicio = () => {
 
               <Col
                 sm={6}
-                data-aos="fade-up"
+                data-aos="fade-right"
                 data-aos-offset="-200"
                 data-aos-delay="10"
                 data-aos-duration="1000"
@@ -159,8 +160,8 @@ const Inicio = () => {
 
               <Col
                 sm={6}
-                data-aos="fade-up"
-                data-aos-offset="-150"
+                data-aos="fade-left"
+                data-aos-offset="-200"
                 data-aos-delay="10"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
@@ -207,7 +208,7 @@ const Inicio = () => {
               <Col
                 sm={12}
                 data-aos="fade-up"
-                data-aos-offset="-150"
+                data-aos-offset="-200"
                 data-aos-delay="10"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
@@ -262,7 +263,7 @@ const Inicio = () => {
         >
           <Container
             data-aos="fade-up"
-            data-aos-offset="-500"
+            data-aos-offset="-200"
             data-aos-delay="10"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"

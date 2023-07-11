@@ -79,6 +79,28 @@
   font-size: 1.5rem;
 }
 
+.imgContainer {
+  overflow: hidden;
+  position: relative;
+  height: 15rem;
+  box-sizing: border-box;
+}
+
+.imgContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: top center;
+  transition: all 1.5s ease;
+}
+
+.imgContainer img:hover {
+  transform: scale(1.3);
+}
+
+
+
 @media (min-width: 768px) {
   .cardToLight:hover {
     background-color: #ffffff;
@@ -103,47 +125,6 @@
     );
     transform: scale(1.02);
   }
-}
-
-.imgContainer {
-  overflow: hidden;
-  position: relative;
-  height: 15rem;
-  box-sizing: border-box;
-}
-
-.imgContainer img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  object-position: top center;
-  transition: all 1s ease;
-}
-
-.imgContainer img:hover {
-  transform: scale(1.3);
-}
-
-
-#galeria div  img{
-  /* width: 250px; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  /* transform: scale(1); */
-  /* opacity: 1; */
-  transition: all 1s ease;
-}
-
-
-
-#galeria div:hover  img{
-  transform: scale(1.3);
 }
 
 
