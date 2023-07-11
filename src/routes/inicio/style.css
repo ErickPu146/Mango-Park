@@ -52,7 +52,7 @@
 .cardToLight:hover {
   background-color: #ffffff;
   background-image: linear-gradient(
-    90deg,
+    0deg,
     #ffffff 0%,
     #ffffff 20%,
     #26dbc9 80%,
@@ -70,18 +70,52 @@
 .cardToDark:hover {
   background-color: #30363e;
   background-image: linear-gradient(
-    90deg,
+    0deg,
     #30363e 0%,
     #30363e 20%,
     #276440 80%,
     #30363e 90%
   );
-
   transform: scale(1.02);
 }
 
 .textBody {
   font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cardToLight:hover {
+    background-color: #ffffff;
+    background-image: linear-gradient(
+      90deg,
+      #ffffff 0%,
+      #ffffff 20%,
+      #26dbc9 80%,
+      #ffffff 90%
+    );
+    transform: scale(1.02);
+  }
+  
+  .cardToDark:hover {
+    background-color: #30363e;
+    background-image: linear-gradient(
+      90deg,
+      #30363e 0%,
+      #30363e 20%,
+      #276440 80%,
+      #30363e 90%
+    );
+    transform: scale(1.02);
+  }
+}
+
+.imgContainer {
+
+}
+
+.imgContainer img:hover {
+  transition: 2s;
+  transform: scale(1.2);
 }
 
 
@@ -95,17 +129,9 @@
     color: #26dbc9;
   }
 
-  .contentText {
-    font-size: 1rem;
-  }
-
   .headerSubtitle {
     font-size: 3rem;
     color: #ffffff;
-  }
-
-  .textBody {
-    font-size: 2.6rem;
   }
 }
 

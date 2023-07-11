@@ -61,7 +61,7 @@ const Inicio = () => {
           } position-relative py-md-5 relative`}
         >
           <Container className="text-center relative">
-            <Row className="py-5 gap-0 row-gap-4">
+            <Row className="py-5 gap-0 row-gap-5">
               <Col
                 sm={12}
                 data-aos="fade-up"
@@ -87,7 +87,7 @@ const Inicio = () => {
                         <Card.Title className="fs-1 headerText">
                           Nosotros
                         </Card.Title>
-                        <Card.Text className="contentText fw-semibold">
+                        <Card.Text className="contentText  fw-semibold">
                           Desde el año 2005, nuestra empresa se enorgullece de
                           contar con una amplia experiencia en el diseño y
                           construcción de espacios naturales que brindan un
@@ -139,7 +139,7 @@ const Inicio = () => {
                             <span>Compromiso</span>
                           </div>
                         </Card.Title>
-                        <Card.Text className="contentText fw-semibold">
+                        <Card.Text className="contentText  fw-semibold">
                           Nuestro compromiso nos impulsa a crear hábitats que
                           reflejen fielmente los entornos naturales de cada
                           especie, promoviendo su bienestar y preservando la
@@ -187,7 +187,7 @@ const Inicio = () => {
                             <span>Proyectos</span>
                           </div>
                         </Card.Title>
-                        <Card.Text className="contentText fw-semibold">
+                        <Card.Text className="contentText  fw-semibold">
                           Cada proyecto del zoológico que emprendemos es único y
                           se adapta a las necesidades y características de la
                           ubicación y las especies que albergará. Contamos con
@@ -226,7 +226,7 @@ const Inicio = () => {
                         <Card.Title className="fs-1 headerText">
                           Descubre
                         </Card.Title>
-                        <Card.Text className="contentText fw-semibold">
+                        <Card.Text className="contentText  fw-semibold">
                           Te invitamos a explorar nuestro sitio web y descubrir
                           la maravillosa diversidad de nuestro zoológico, así
                           como las iniciativas de conservación en las que
@@ -236,7 +236,7 @@ const Inicio = () => {
                         </Card.Text>
                       </Col>
                       <Col md={6} className="d-md-flex align-items-center">
-                        <Card.Img src={imagen2} className="imgRespon h-100" />
+                        <Card.Img src={imagen1} className="imgRespon h-100" />
                       </Col>
                     </Row>
                   </Card.Body>
@@ -251,86 +251,43 @@ const Inicio = () => {
             background ? "text-bg-dark" : "text-bg-light"
           } pb-md-5 relative`}
         >
-          <Container className="relative">
-            <Row className="py-5 ">
-              <Col
-                sm={12}
-                data-aos="fade-up"
-                data-aos-offset="-350"
-                data-aos-delay="10"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center"
-              >
-                <Card
-                  className={`${
-                    background ? "cardToDark text-light" : "cardToLight"
-                  }`}
-                >
-                  <Card.Body>
-                    <Row className="gap-0 row-gap-4">
-                      <Col
-                        sm={12}
-                        className="d-md-flex flex-column justify-content-center px-md-4 py-4"
-                      >
-                        <Card.Title className="fs-1 headerText">
-                          <div
-                            className={`${
-                              background
-                                ? "shadowSubtitleDark"
-                                : "shadowSubtitleLight"
-                            } text-center subTitle w-100`}
-                          >
-                            <span>Proteccion y bienestar</span>
-                          </div>
-                        </Card.Title>
-                      </Col>
-                      <Col xs={12}>
-                        <Card.Text className="textBody fw-semibold px-md-5 lh-1">
-                          Te invitamos a visitarnos y descubrir cómo trabajamos
-                          incansablemente para proteger y preservar a nuestros
-                          animales. ¡Únete a nosotros en esta noble causa!"
-                        </Card.Text>
-                      </Col>
-                      <Col md={6} className="d-md-flex align-items-center">
-                        <Card.Img
-                          src={imagen1}
-                          className="h-100 img-fluid imgRespon"
-                        />
-                      </Col>
-                      <Col xs={6} md={3}>
-                        <img
-                          className="rounded-3 img-fluid w-100 h-100"
-                          src={imagen2}
-                          alt="Imagen2"
-                        />
-                      </Col>
-                      <Col xs={6} md={3}>
-                        <img
-                          className="rounded-3 img-fluid w-100 h-100"
-                          src={imagen3}
-                          alt="Imagen3"
-                        />
-                      </Col>
-                      <Col xs={6} md={3}>
-                        <img
-                          className="rounded-3 img-fluid w-100 h-100"
-                          src={imagen4}
-                          alt="Imagen4"
-                        />
-                      </Col>
-                      <Col xs={6} md={3}>
-                        <img
-                          className="rounded-3 img-fluid w-100 h-100"
-                          src={imagen5}
-                          alt="Imagen4"
-                        />
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
+          <Container
+            data-aos="fade-up"
+            data-aos-offset="-500"
+            data-aos-delay="10"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="relative"
+          >
+            <div
+              className={`${
+                background ? "shadowSubtitleDark" : "shadowSubtitleLight"
+              } text-center subTitle mb-5 w-100`}
+            >
+              <span>Protección y</span>
+              <span> bienestar</span>
+            </div>
+            <h2 className="text-center contentText">
+              Te invitamos a visitarnos y descubrir cómo trabajamos
+              incansablemente para proteger y preservar a nuestros animales.
+              ¡Únete a nosotros en esta noble causa!"
+            </h2>
+
+            <Row className="py-5 gap-0 row-gap-2">
+              <Col sm={6} lg={3} className="imgContainer">
+                <img src={imagen2} alt="Imagen" className="rounded-2 img-fluid w-100 h-100"/>
+              </Col>
+              <Col sm={6} lg={3} className="imgContainer">
+                <img src={imagen3} alt="Imagen" className="rounded-2 img-fluid w-100 h-100"/>
+              </Col>
+              <Col sm={6} lg={3} className="imgContainer">
+                <img src={imagen4} alt="Imagen" className="rounded-2 img-fluid w-100 h-100"/>
+              </Col>
+              <Col sm={6} lg={3} className="imgContainer">
+                <img src={imagen5} alt="Imagen" className="rounded-2 img-fluid w-100 h-100"/>
               </Col>
             </Row>
           </Container>
