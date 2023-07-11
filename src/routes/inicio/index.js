@@ -84,10 +84,10 @@ const Inicio = () => {
                         md={6}
                         className="d-md-flex flex-column justify-content-center px-md-4 py-4"
                       >
-                        <Card.Title className="fs-1 headerText">
+                        <Card.Title className="fs-1 headerText ">
                           Nosotros
                         </Card.Title>
-                        <Card.Text className="contentText  fw-semibold">
+                        <Card.Text className="contentText fw-semibold py-5">
                           Desde el año 2005, nuestra empresa se enorgullece de
                           contar con una amplia experiencia en el diseño y
                           construcción de espacios naturales que brindan un
@@ -95,11 +95,14 @@ const Inicio = () => {
                           de especies.
                         </Card.Text>
                       </Col>
-                      <Col md={6} className="d-md-flex align-items-center">
-                        <Card.Img
-                          src={imagen2}
-                          className="h-100 img-fluid imgRespon"
-                        />
+                      <Col md={6}>
+                        <div className="imgContainer h-100 rounded-2">
+                          <img
+                            src={imagen2}
+                            alt="Imagen"
+                            className="h-100 w-100"
+                          />
+                        </div>
                       </Col>
                     </Row>
                   </Card.Body>
@@ -223,10 +226,10 @@ const Inicio = () => {
                         md={6}
                         className="d-md-flex flex-column justify-content-center px-md-4 py-4"
                       >
-                        <Card.Title className="fs-1 headerText">
+                        <Card.Title className="fs-1 headerText ">
                           Descubre
                         </Card.Title>
-                        <Card.Text className="contentText  fw-semibold">
+                        <Card.Text className="contentText fw-semibold py-5">
                           Te invitamos a explorar nuestro sitio web y descubrir
                           la maravillosa diversidad de nuestro zoológico, así
                           como las iniciativas de conservación en las que
@@ -235,8 +238,14 @@ const Inicio = () => {
                           de la vida silvestre desde el año 2005.
                         </Card.Text>
                       </Col>
-                      <Col md={6} className="d-md-flex align-items-center">
-                        <Card.Img src={imagen1} className="imgRespon h-100" />
+                      <Col md={6}>
+                        <div className="imgContainer h-100 rounded-2">
+                          <img
+                            src={imagen2}
+                            alt="Imagen"
+                            className="h-100 w-100"
+                          />
+                        </div>
                       </Col>
                     </Row>
                   </Card.Body>
@@ -279,22 +288,38 @@ const Inicio = () => {
             <Row className="py-5 gap row-gap-2">
               <Col sm={6} lg={3} className="px-2">
                 <div className="imgContainer rounded-2">
-                  <img src={imagen2} alt="Imagen" className="img-fluid w-100 h-100"/>
+                  <img
+                    src={imagen2}
+                    alt="Imagen"
+                    className="img-fluid w-100 h-100"
+                  />
                 </div>
               </Col>
               <Col sm={6} lg={3} className="px-2">
                 <div className="imgContainer rounded-2">
-                  <img src={imagen3} alt="Imagen" className="img-fluid w-100 h-100"/>
+                  <img
+                    src={imagen3}
+                    alt="Imagen"
+                    className="img-fluid w-100 h-100"
+                  />
                 </div>
               </Col>
               <Col sm={6} lg={3} className="px-2">
                 <div className="imgContainer rounded-2">
-                  <img src={imagen4} alt="Imagen" className="img-fluid w-100 h-100"/>
+                  <img
+                    src={imagen4}
+                    alt="Imagen"
+                    className="img-fluid w-100 h-100"
+                  />
                 </div>
               </Col>
               <Col sm={6} lg={3} className="px-2">
                 <div className="imgContainer rounded-2">
-                  <img src={imagen5} alt="Imagen" className="img-fluid w-100 h-100"/>
+                  <img
+                    src={imagen5}
+                    alt="Imagen"
+                    className="img-fluid w-100 h-100"
+                  />
                 </div>
               </Col>
             </Row>
