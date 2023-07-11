@@ -276,18 +276,26 @@ const Inicio = () => {
               ¡Únete a nosotros en esta noble causa!"
             </h2>
 
-            <Row className="py-5 gap-0 row-gap-2">
-              <Col sm={6} lg={3} className="imgContainer">
-                <img src={imagen2} alt="Imagen" className="rounded-2 img-fluid w-100 h-100"/>
+            <Row className="py-5 gap row-gap-2">
+              <Col sm={6} lg={3} className="px-2">
+                <div className="imgContainer rounded-2">
+                  <img src={imagen2} alt="Imagen" className="img-fluid w-100 h-100"/>
+                </div>
               </Col>
-              <Col sm={6} lg={3} className="imgContainer">
-                <img src={imagen3} alt="Imagen" className="rounded-2 img-fluid w-100 h-100"/>
+              <Col sm={6} lg={3} className="px-2">
+                <div className="imgContainer rounded-2">
+                  <img src={imagen3} alt="Imagen" className="img-fluid w-100 h-100"/>
+                </div>
               </Col>
-              <Col sm={6} lg={3} className="imgContainer">
-                <img src={imagen4} alt="Imagen" className="rounded-2 img-fluid w-100 h-100"/>
+              <Col sm={6} lg={3} className="px-2">
+                <div className="imgContainer rounded-2">
+                  <img src={imagen4} alt="Imagen" className="img-fluid w-100 h-100"/>
+                </div>
               </Col>
-              <Col sm={6} lg={3} className="imgContainer">
-                <img src={imagen5} alt="Imagen" className="rounded-2 img-fluid w-100 h-100"/>
+              <Col sm={6} lg={3} className="px-2">
+                <div className="imgContainer rounded-2">
+                  <img src={imagen5} alt="Imagen" className="img-fluid w-100 h-100"/>
+                </div>
               </Col>
             </Row>
           </Container>
